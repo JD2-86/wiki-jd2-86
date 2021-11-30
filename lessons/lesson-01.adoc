@@ -2,6 +2,14 @@
 
 == Practice
 
+=== Вводное задание
+
+* Разработать программу для поиска количества цифр в числе.
+* Разработать программу описывающую компьютер как список комплектующих из которых он состоит.
+* Разработать CLI калькулятор, т.е. взаимодействие с ним осуществляется с помощью Command Line Interface.
+
 == Homework
 
 * Заполнить форму link:https://forms.gle/Jq34PAsihadiJfYX6[Google Form: background].
+* Выполнить действия описанные в link:https://process.rakovets.by/common/#_communication[Procces :: Communication]
+* Выполнить задание link:https://process.rakovets.by/course/java/enterprise/#_v0_1[Intro]
