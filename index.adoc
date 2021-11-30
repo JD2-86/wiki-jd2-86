@@ -10,6 +10,6 @@ Wiki for group JD2-86.
 
 :leveloffset: +1
 
-include::common/index.adoc[]
+include::lessons/index.adoc[]
 
 :leveloffset: -1
