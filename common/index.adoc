@@ -1,0 +1,10 @@
+= Common
+:imagesdir: ../assets/img/
+
+// text
+
+:leveloffset: +1
+
+// includes
+
+:leveloffset: -1
