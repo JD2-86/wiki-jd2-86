@@ -11,5 +11,7 @@
 == Homework
 
 * Заполнить форму link:https://forms.gle/Jq34PAsihadiJfYX6[Google Form: background].
-* Выполнить действия описанные в link:https://process.rakovets.by/common/#_communication[Procces :: Communication]
+* Выполнить действия описанные в link:https://process.rakovets.by/common/#_communication[Process :: Communication]
+** Invite links в группу JD2-86-dev: https://t.me/+MFCHmO9LUCQyNWMy
+** Invite links в группу JD2-86: https://t.me/+DfHDL0c4BiwwNWZi
 * Выполнить задание link:https://process.rakovets.by/course/java/enterprise/#_v0_1[Intro]
