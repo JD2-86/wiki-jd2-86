@@ -1,0 +1,11 @@
+= Lesson 2
+
+== Practice
+
+* Установить *Apache Maven* (обязательно в директорию: `/opt/apache-maven/${version}`).
+* Сгенерировать проект с помощью команды: `mvn archetype:generate`
+
+== Homework
+
+* Изучить теоретический материал.
+* Выполнить задание link:https://github.com/rakovets/course-java-tools/blob/master/apache-maven/intro/src/main/resources/practice/apache-maven-intro.adoc[Apache Maven: Intro]
