@@ -13,3 +13,8 @@ Wiki for group JD2-86.
 include::lessons/index.adoc[]
 
 :leveloffset: -1
+
+== Links
+
+* link:https://mvnrepository.com[MVNrepository]
+* link:https://miro.com/app/board/o9J_lymQARI=/?invite_link_id=562235192162[MindMap: Apache Maven]
