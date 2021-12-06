@@ -17,5 +17,7 @@
 
 == Homework
 
-* Изучить теоретический материал.
+* Изучить теоретический материал:
+** wiki
+** link:https://miro.com/app/board/o9J_lymQARI=/?invite_link_id=562235192162[Apache Maven MindMap]
 * Выполнить задание link:https://github.com/rakovets/course-java-tools/blob/master/apache-maven/intro/src/main/resources/practice/apache-maven-intro.adoc[Apache Maven: Intro]
