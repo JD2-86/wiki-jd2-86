@@ -1,5 +1,5 @@
 = Wiki for group JD2-86
-:source-highlighter: prettify
+:source-highlighter: rouge
 :sectnums:
 :toc: left
 :toclevels: 2
