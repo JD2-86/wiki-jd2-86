@@ -1,10 +1,5 @@
 = Lesson 2: Apache Maven
 
-== Links
-
-* link:https://mvnrepository.com[MVNrepository]
-* link:https://miro.com/app/board/o9J_lymQARI=/?invite_link_id=562235192162[MindMap: Apache Maven]
-
 == Practice
 
 * Установить *Apache Maven* (обязательно в директорию: `/opt/apache-maven/${version}`).
