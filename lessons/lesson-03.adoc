@@ -1,0 +1,31 @@
+= Lesson 3: Git. AsciiDoc
+
+== Practice
+
+* Установить *Git* (обязательно в директорию: `/opt/git`).
+** link:https://youtu.be/z2N2ON87vXY[How to install Git?^]
+* Выполнить задание по link:https://github.com/rakovets/course-development-tools/blob/master/git.adoc[Командная разработка с помощью Git] совместно с разработчиком, которого тренер назначил работать с Вами в паре.
+
+== Homework
+
+* Изучить теоретический материал.
+* Выполнить задание по Asciidoc: link:https://github.com/rakovets/workshop-asciidoc[Creating documentation with the AsciiDoc]
+
+.Маппинг тем для задания по AsciiDoc
+|===
+|Разработчик|Links for source topic
+|Бахарь Николай Анатольевич|https://proselyte.net/tutorials/hibernate-tutorial/introduction/, https://proselyte.net/tutorials/hibernate-tutorial/architecture/
+|Василевич Виталий Валерьевич|https://proselyte.net/tutorials/hibernate-tutorial/configure/, https://proselyte.net/tutorials/hibernate-tutorial/sessions/
+|Жигалко Евгений Владимирович|https://javarush.ru/groups/posts/2112-kratkiy-ehkskurs-v-vnedrenie-zavisimostey-ili-chto-ejshje-za-cdi
+|Кармызов Сергей Николаевич|https://proselyte.net/tutorials/hibernate-tutorial/persistent-classes/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-files/
+|Карпович Владислав Андреевич|https://proselyte.net/tutorials/hibernate-tutorial/simple-application/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/
+|Климахович Владислав Игоревич|https://proselyte.net/tutorials/hibernate-tutorial/annotations/, https://proselyte.net/tutorials/hibernate-tutorial/hibernate-query-language/
+|Коваленко Алексей Петрович|https://proselyte.net/tutorials/hibernate-tutorial/criteria-queries/, https://proselyte.net/tutorials/hibernate-tutorial/native-sql/
+|Колбасов Илья Николаевич|https://proselyte.net/tutorials/hibernate-tutorial/caching/, https://proselyte.net/tutorials/hibernate-tutorial/batch-processing/
+|Малиновский Павел Сергеевич|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/map-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/sortedset-mapping-example-2/
+|Нестерук Даниил Андреевич|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/one-to-many-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/many-to-many-mapping-example/
+|Парамонов Алексей Владимирович|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/many-to-one-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/one-to-one-mapping-example/
+|Скопинов Дмитрий Николаевич|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/list-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/collection-mapping-example/
+|Толкач Александр Михайлович|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/set-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/sortedset-mapping-example/
+|Щербунов Даниил Даниилович|https://javarush.ru/groups/posts/2637-vvedenie-v-java-ee, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/component-mapping-example/
+|===
