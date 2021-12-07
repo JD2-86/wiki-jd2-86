@@ -19,3 +19,4 @@
 
 * Изучить теоретический материал.
 * Выполнить задание link:https://github.com/rakovets/course-java-tools/blob/master/apache-maven/intro/src/main/resources/practice/apache-maven-intro.adoc[Apache Maven: Intro].
+* Зарегистрироваться на AWS: https://process.rakovets.by/course/java/enterprise/#_amazon_web_service
