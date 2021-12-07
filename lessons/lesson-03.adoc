@@ -3,7 +3,7 @@
 == Practice
 
 * Установить *Git* (обязательно в директорию: `/opt/git`).
-** link:https://youtu.be/2hPFBnjDQ4c[How to install Apache Maven?^]
+** link:https://youtu.be/z2N2ON87vXY[How to install Git?^]
 * Выполнить задание по link:https://github.com/rakovets/course-development-tools/blob/master/git.adoc[Командная разработка с помощью Git] совместно с разработчиком, которого тренер назначил работать с Вами в паре.
 
 == Homework
