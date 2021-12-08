@@ -1,0 +1,18 @@
+= Links
+
+== Services
+
+* link:https://github.com[GitHub]
+* link:https://mvnrepository.com[MVNrepository]
+* link:https://aws.amazon.com[AWS]
+
+== Resources
+
+* link:https://process.rakovets.by[Process for Course]
+* link:https://miro.com/app/board/o9J_lymQARI=/?invite_link_id=562235192162[MindMap: Apache Maven]
+* link:https://git-scm.com/book/ru/v2[Справочник: Git]
+* link:https://githowto.com/ru[Практика: Git How To]
+
+== Topics
+
+* link:https://habrahabr.ru/blogs/Git/106912/[Удачная модель ветвления для Git.]
