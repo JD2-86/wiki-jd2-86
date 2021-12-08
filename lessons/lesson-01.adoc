@@ -2,11 +2,17 @@
 
 == Practice
 
-=== Вводное задание
+=== Task 1
 
-* Разработать программу для поиска количества цифр в числе.
-* Разработать программу описывающую компьютер как список комплектующих из которых он состоит.
-* Разработать CLI калькулятор, т.е. взаимодействие с ним осуществляется с помощью Command Line Interface.
+Разработать программу для поиска количества цифр в числе.
+
+=== Task 2
+
+Разработать программу описывающую компьютер как список комплектующих из которых он состоит.
+
+=== Task 3
+
+Разработать CLI калькулятор, т.е. взаимодействие с ним осуществляется с помощью Command Line Interface.
 
 == Homework
 
@@ -14,4 +20,5 @@
 * Выполнить действия описанные в link:https://process.rakovets.by/common/#_communication[Process :: Communication]
 ** Invite links в группу JD2-86-dev: https://t.me/+MFCHmO9LUCQyNWMy
 ** Invite links в группу JD2-86: https://t.me/+DfHDL0c4BiwwNWZi
-* Выполнить задание link:https://process.rakovets.by/course/java/enterprise/#_v0_1[Intro]
+* Выполнить задание:
+** link:https://process.rakovets.by/course/java/enterprise/#_v0_1[Intro]

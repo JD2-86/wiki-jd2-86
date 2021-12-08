@@ -11,6 +11,7 @@
 * Изучить теоретический материал.
 * Выполнить задание:
 ** link:https://github.com/rakovets/workshop-asciidoc[Creating documentation with the AsciiDoc]
+** Маппинг тем для задания по AsciiDoc приведен ниже.
 
 .Маппинг тем для задания по AsciiDoc
 |===
