@@ -1,5 +1,8 @@
 = Links
 
+* link:https://drive.google.com/drive/folders/1y-PWXwJRSjE7EiasDO_HOcZ7Oqd14tGO?usp=sharing[Google Drive]
+* link:https://wiki.rakovets.by[Wiki by Rakovets]
+
 == Services
 
 * link:https://github.com[GitHub^]
