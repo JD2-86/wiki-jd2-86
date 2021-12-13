@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.16">
-<title>Lesson 2: Apache Maven. Intro</title>
+<title>Lesson 4: Web. Apache Tomcat</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Lesson 2: Apache Maven. Intro</h1>
+<h1>Lesson 4: Web. Apache Tomcat</h1>
 </div>
 <div id="content">
 <div class="sect1">
@@ -448,50 +448,41 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Установить <strong>Apache Maven</strong> (обязательно в директорию: <code>/opt/apache-maven/${version}</code>).</p>
+<p>Установить <strong>Apache Tomcat</strong>.</p>
 </li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="_task_1">Task 1</h3>
+<li>
+<p>Настроить <strong>AWS</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Сгенерировать проект с помощью команды: <code>mvn archetype:generate</code>.</p>
+<p>Создать группу и пользователя (<strong>Identity and Access Management</strong>/<strong>IAM</strong>)</p>
 </li>
 <li>
-<p>Найти и добавить в зависимости <strong>JUnit 5</strong>.</p>
+<p>Создать <strong>EC2</strong> instance (фактически виртуальная машина).</p>
 </li>
 <li>
-<p>Добавить тесты в проект.</p>
+<p>Настроить IO трафик для port <code>8080</code> на <strong>EC2</strong> instance.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>Поочередно, с помощью CLI, выполнить ниже приведенные команды и убедиться что они выполнили возложенную на их функцию:</p>
+<p>Подготовить сервер:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>mvn compile</code></p>
+<p>Установить <strong>OpenJDK</strong>.</p>
 </li>
 <li>
-<p><code>mvn clean</code></p>
+<p>Установить <strong>Apache Maven</strong>.</p>
 </li>
 <li>
-<p><code>mvn test</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-<li>
-<p><code>mvn package</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
+<p>Установить <strong>Apache Tomcat</strong>.</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -504,14 +495,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Изучить теоретический материал.</p>
 </li>
 <li>
-<p>Зарегистрироваться на AWS: <a href="https://process.rakovets.by/course/java/enterprise/#_amazon_web_service" class="bare">https://process.rakovets.by/course/java/enterprise/#_amazon_web_service</a></p>
-</li>
-<li>
 <p>Выполнить задание:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://github.com/rakovets/course-java-tools/blob/master/apache-maven/intro/src/main/resources/practice/apache-maven-intro.adoc">Apache Maven: Intro</a>.</p>
+<p><a href="https://github.com/rakovets/course-java-jakarta-ee/blob/master/01-web-static-app/src/main/resources/web-static-app.adoc">Web CV</a>.</p>
 </li>
 </ul>
 </div>

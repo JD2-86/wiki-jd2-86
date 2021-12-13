@@ -1,0 +1,19 @@
+= Lesson 4: Web. Apache Tomcat
+
+== Practice
+
+* Установить *Apache Tomcat*.
+* Настроить *AWS*:
+** Создать группу и пользователя (*Identity and Access Management*/*IAM*)
+** Создать *EC2* instance (фактически виртуальная машина).
+** Настроить IO трафик для port `8080` на *EC2* instance.
+* Подготовить сервер:
+** Установить *OpenJDK*.
+** Установить *Apache Maven*.
+** Установить *Apache Tomcat*.
+
+== Homework
+
+* Изучить теоретический материал.
+* Выполнить задание:
+** link:https://github.com/rakovets/course-java-jakarta-ee/blob/master/01-web-static-app/src/main/resources/web-static-app.adoc[Web CV].
