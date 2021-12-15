@@ -33,6 +33,7 @@
 * link:https://youtu.be/TUKT1CSzwZI[Lesson 1: Intro. Testing^]
 * link:https://youtu.be/l_6TtVRJlyQ[Lesson 2: Apache Maven. Intro^]
 * link:https://youtu.be/oFEom97DbcA[Lesson 3: Git. Asciidoc^]
+* link:https://youtu.be/nR6xDQHx5sw[Lesson 4: Архитектура приложения. Введение в Web. Протокол HTTP. Apache Tomcat^]
 
 == Topics
 
