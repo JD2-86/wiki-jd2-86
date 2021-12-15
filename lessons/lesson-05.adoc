@@ -1,0 +1,13 @@
+= Lesson 4: Apache Tomcat. Servlet
+
+== Practice
+
+* Применить лицензии JetBrains.
+* Выполнить задание:
+** link:https://github.com/rakovets/course-java-jakarta-ee/blob/master/03-web-servlet-app/src/main/resources/servlet.adoc[Servlet].
+
+== Homework
+
+* Изучить теоретический материал.
+* Выполнить задание:
+** link:https://github.com/rakovets/course-java-jakarta-ee/blob/master/03-web-servlet-app/src/main/resources/user-management-web-app.adoc[Web CV].
