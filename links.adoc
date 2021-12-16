@@ -34,6 +34,7 @@
 * link:https://youtu.be/l_6TtVRJlyQ[Lesson 2: Apache Maven. Intro^]
 * link:https://youtu.be/oFEom97DbcA[Lesson 3: Git. Asciidoc^]
 * link:https://youtu.be/nR6xDQHx5sw[Lesson 4: Архитектура приложения. Введение в Web. Протокол HTTP. Apache Tomcat^]
+* link:https://youtu.be/QAl8S9qtTwE[Lesson 5: Apache Tomcat. Servlet^]
 
 == Topics
 
