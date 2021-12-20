@@ -16,7 +16,7 @@
 .Маппинг тем для задания по AsciiDoc
 |===
 |Разработчик|Links for source topic
-|Бахарь Николай Анатольевич|https://proselyte.net/tutorials/hibernate-tutorial/introduction/, https://proselyte.net/tutorials/hibernate-tutorial/architecture/
+|Антонович Валентина Георгиевна|https://proselyte.net/tutorials/hibernate-tutorial/introduction/, https://proselyte.net/tutorials/hibernate-tutorial/architecture/
 |Василевич Виталий Валерьевич|https://proselyte.net/tutorials/hibernate-tutorial/configure/, https://proselyte.net/tutorials/hibernate-tutorial/sessions/
 |Жигалко Евгений Владимирович|https://javarush.ru/groups/posts/2112-kratkiy-ehkskurs-v-vnedrenie-zavisimostey-ili-chto-ejshje-za-cdi
 |Кармызов Сергей Николаевич|https://proselyte.net/tutorials/hibernate-tutorial/persistent-classes/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-files/
@@ -24,7 +24,7 @@
 |Климахович Владислав Игоревич|https://proselyte.net/tutorials/hibernate-tutorial/annotations/, https://proselyte.net/tutorials/hibernate-tutorial/hibernate-query-language/
 |Коваленко Алексей Петрович|https://proselyte.net/tutorials/hibernate-tutorial/criteria-queries/, https://proselyte.net/tutorials/hibernate-tutorial/native-sql/
 |Колбасов Илья Николаевич|https://proselyte.net/tutorials/hibernate-tutorial/caching/, https://proselyte.net/tutorials/hibernate-tutorial/batch-processing/
-|???|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/map-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/sortedset-mapping-example-2/
+|Карпович Дмитрий Владимирович|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/map-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/sortedset-mapping-example-2/
 |Нестерук Даниил Андреевич|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/one-to-many-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/many-to-many-mapping-example/
 |Парамонов Алексей Владимирович|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/many-to-one-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/one-to-one-mapping-example/
 |Скопинов Дмитрий Николаевич|https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/list-mapping-example/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/collection-mapping-example/
