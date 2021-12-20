@@ -39,3 +39,4 @@
 == Topics
 
 * link:https://habrahabr.ru/blogs/Git/106912/[Удачная модель ветвления для Git.^]
+* link:https://stackoverflow.com/questions/138948/how-to-get-utf-8-working-in-java-webapps/138950[How to get UTF-8 working in Java webapps?]
