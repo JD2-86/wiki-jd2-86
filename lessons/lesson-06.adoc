@@ -1,0 +1,11 @@
+= Lesson 6: Servlets. JSP
+
+== Practice
+
+* Выполнить задание:
+** link:https://github.com/rakovets/course-java-jakarta-ee/blob/master/04-web-jsp-app/src/main/resources/jsp.adoc[Tasks: JSP].
+
+== Homework
+
+* Изучить теоретический материал.
+* Общее для Lessons 06-07. Смотри: Lesson 07.
