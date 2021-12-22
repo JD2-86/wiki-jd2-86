@@ -1,0 +1,12 @@
+= Lesson 7:  Filter. JSTL. EL.
+
+== Practice
+
+* Выполнить задание:
+** link:https://github.com/rakovets/course-java-jakarta-ee/blob/master/07-web-filter-app/src/main/resources/filter.adoc[Tasks: Filter].
+
+== Homework
+
+* Изучить теоретический материал.
+* Общее для Lessons 06-07:
+** https://github.com/rakovets/course-java-jakarta-ee/blob/master/06-web-jstl-app/src/main/resources/jstl.adoc
