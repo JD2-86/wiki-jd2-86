@@ -35,6 +35,8 @@
 * link:https://youtu.be/oFEom97DbcA[Lesson 3: Git. Asciidoc^]
 * link:https://youtu.be/nR6xDQHx5sw[Lesson 4: Архитектура приложения. Введение в Web. Протокол HTTP. Apache Tomcat^]
 * link:https://youtu.be/QAl8S9qtTwE[Lesson 5: Apache Tomcat. Servlet^]
+* link:https://youtu.be/i3iF8wkUFQY[Lesson 6: Servlets. JSP^]
+* link:https://youtu.be/bPMIpwtjKZY[Lesson 7: Filter. JSTL. EL^]
 
 == Topics
 
