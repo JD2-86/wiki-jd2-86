@@ -2,6 +2,7 @@
 
 == Practice
 
+* Установить *PostgreSQL* `latest`
 * Выполнить задание:
 ** link:https://github.com/rakovets/course-sql/blob/master/tasks/basics.adoc[Basics].
 ** link:https://github.com/rakovets/course-sql/blob/master/tasks/data-manipulation.adoc[Data manipulation].
