@@ -1,0 +1,16 @@
+= Lesson 9: Нормализация. Группировки. Joins
+
+== Practice
+
+* Установить *PostgreSQL* `latest`
+* Выполнить задание:
+** link:https://github.com/rakovets/course-sql/blob/master/tasks/multi-tabular-databases.adoc[Multi-tabular databases].
+** link:https://github.com/rakovets/course-sql/blob/master/tasks/designing-relational-databases.adoc[Designing relational databases].
+
+== Homework
+
+* Изучить теоретический материал.
+* Общее для Lessons 08-09. Результатом являются SQL-scripts, с помощью которых можно повторить те же действия, на пустой БД.
+** разработать структуры БД для собственного проекта
+** добавить в каждую таблицу с сущностью 10+ записей, в каждую связующую таблицу 20+ записей
+** выполнить основные CRUD операции, которые будут выполняться в рамках данного проекта (не менее 30 различных запросов)
