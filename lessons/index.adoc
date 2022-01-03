@@ -23,4 +23,6 @@ include::lesson-08.adoc[]
 
 include::lesson-09.adoc[]
 
+include::lesson-10.adoc[]
+
 :leveloffset: -1
