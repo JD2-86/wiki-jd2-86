@@ -1,0 +1,12 @@
+= Lesson 10: Java Database Connectivity (JDBC)
+
+== Practice
+
+* Сделать миграцию данных в БД с помощью проекта: link:https://github.com/rakovets/course-java-data-persistence/tree/master/.init[Database init]
+* Выполнить задание:
+** link:https://github.com/rakovets/course-java-data-persistence/blob/master/jdbc/src/main/resources/jdbc.adoc[JDBC].
+
+== Homework
+
+* Изучить теоретический материал.
+* Общее для Lessons 10-11.
