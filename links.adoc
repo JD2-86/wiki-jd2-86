@@ -38,6 +38,7 @@
 * link:https://youtu.be/i3iF8wkUFQY[Lesson 6: Servlets. JSP^]
 * link:https://youtu.be/bPMIpwtjKZY[Lesson 7: Filter. JSTL. EL^]
 * link:https://youtu.be/SpnATl0KeRU[Lesson 8: Введение в Базы данных и SQL^]
+* link:https://youtu.be/dv-Mt2Cpun0[Lesson 9: Нормализация. Группировки. Joins^]
 
 == Topics
 
