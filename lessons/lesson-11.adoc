@@ -1,0 +1,11 @@
+= Lesson 11: Data Access Object (DAO)
+
+== Practice
+
+* Сделать миграцию данных в БД с помощью проекта: link:https://github.com/rakovets/course-java-data-persistence/tree/master/.init[Database init]
+
+== Homework
+
+* Изучить теоретический материал.
+* Общее для Lessons 10-11. Реализовать задание с помощью паттерна DAO:
+** link:https://github.com/rakovets/course-java-data-persistence/blob/master/jdbc/src/main/resources/jdbc.adoc[JDBC].
