@@ -39,6 +39,7 @@
 * link:https://youtu.be/bPMIpwtjKZY[Lesson 7: Filter. JSTL. EL^]
 * link:https://youtu.be/SpnATl0KeRU[Lesson 8: Введение в Базы данных и SQL^]
 * link:https://youtu.be/dv-Mt2Cpun0[Lesson 9: Нормализация. Группировки. Joins^]
+* link:https://youtu.be/ZFZMBW3wyj0[Lesson 10: Java Database Connectivity (JDBC)^]
 
 == Topics
 
