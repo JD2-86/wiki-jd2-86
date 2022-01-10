@@ -1,0 +1,10 @@
+= Lesson 12: Intro to JPA
+
+== Practice
+
+* Выполнить link:https://github.com/rakovets/course-java-data-persistence/blob/master/04-intro-jpa/src/main/resources/intro-jpa.adoc[Intro to JPA]
+
+== Homework
+
+* Изучить теоретический материал.
+* Общее для Lessons 12-13.
