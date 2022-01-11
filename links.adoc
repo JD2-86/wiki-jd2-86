@@ -41,6 +41,7 @@
 * link:https://youtu.be/dv-Mt2Cpun0[Lesson 9: Нормализация. Группировки. Joins^]
 * link:https://youtu.be/ZFZMBW3wyj0[Lesson 10: Java Database Connectivity (JDBC)^]
 * link:https://youtu.be/RauHxlrEo0Y[Lesson 11: Data Access Object (DAO)^]
+* link:https://youtu.be/6ZjaO8hGiQA[Lesson 12: Java Persistence API (JPA)^]
 
 == Topics
 
