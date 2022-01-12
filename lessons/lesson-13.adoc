@@ -1,0 +1,9 @@
+= Lesson 13: Intro to Hibernate
+
+== Practice
+
+* Выполнить link:https://github.com/rakovets/course-java-data-persistence/blob/master/05-intro-hibernate/src/main/resources/intro-hibernate.adoc[Intro to Hibernate]
+
+== Homework
+
+* Изучить теоретический материал.
