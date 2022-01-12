@@ -6,9 +6,9 @@
 
 :leveloffset: +1
 
-include::stage-00.adoc[]
-
 include::stage-01.adoc[]
+
+include::stage-02.adoc[]
 
 include::themes.adoc[]
 
