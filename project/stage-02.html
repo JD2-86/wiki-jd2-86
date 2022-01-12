@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Stage 00: Инициализация проекта</title>
+<title>Stage 02: Проработка функционала проекта</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,64 +438,90 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Stage 00: Инициализация проекта</h1>
+<h1>Stage 02: Проработка функционала проекта</h1>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>На подготовительном этапе прорабатывается идея проекта и его особенности. После чего необходимо инициализировать git-repository для проекта.</p>
+<p>На этом этапе прорабатывается функциональность, которую будет выполнять приложение. Нет никаких ограничений сверху по количеству функционала, но в то же самое время не стоит продумывать проект на месяцы разработки вперед.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<strong>MVP</strong> - <strong>Minimal Viable Product</strong> (<strong>минимально жизнеспособный продукт</strong>)
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="mvp.jpg" alt="MVP">
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_tasks">Tasks</h2>
 <div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+Все нижеописанное, лучше делать с помощью <strong>Mind Map</strong>. В качестве online-инструмента может выступать например: <a href="https://miro.com" class="bare">https://miro.com</a>
+</td>
+</tr>
+</table>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Создать remote repository для проекта в <strong>Organisation</strong>: <a href="https://github.com/orgs/JD2-86/" class="bare">https://github.com/orgs/JD2-86/</a></p>
-</li>
-<li>
-<p>Добавить в проект файл <code>README.adoc</code>, который содержит описание проекта. Пример шаблона приведен ниже.</p>
+<p>Выделить CORE (ядро) вашего функционала, которое будет выступать как <strong>MVP</strong> для вашего проекта. Оно будет являться <strong>EPIC 1</strong>, с которого и начнется разработка проекта.</p>
 </li>
 </ul>
 </div>
-<div class="listingblock">
-<div class="title">Шаблон <code>README.adoc</code> для проекта</div>
+<div class="imageblock">
 <div class="content">
-<pre>= ${your-project-name}
-
-== Description
-
-==== Какою проблему данный проект решает или что нового приносит для пользователей?
-
-* Пункт 1
-* Пункт 2
-* ...
-* Пункт N
-
-==== Потенциальные пользователи
-
-* Пункт 1
-* Пункт 2
-* ...
-* Пункт N
-
-==== Аналогичные приложения
-
-* Пункт 1
-* Пункт 2
-* ...
-* Пункт N
-
-==== Конкурентное преимущество
-
-* Пункт 1
-* Пункт 2
-* ...
-* Пункт N</pre>
+<img src="user-story-diagram.png" alt="User story diagram">
 </div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Сформулировать для этого <strong>EPIC</strong> <strong>User Stories</strong>, т.е. произвести декомпозицию глобальной задачи в пользовательский функционал. <strong>User Story</strong> должны соответствовать шаблону:</p>
+<div class="literalblock">
+<div class="content">
+<pre>КАК ${ROLE} ХОЧУ ${FUNCTIONALITY} ПОТОМУ ЧТО ${PROFIT}</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>${ROLE}</code> - роль пользователя в системе</p>
+</li>
+<li>
+<p><code>${FUNCTIONALITY}</code> - функциональность, которая должна быть доступна этой пользовательской роли (некоторое ОДНО действие)</p>
+</li>
+<li>
+<p><code>${PROFIT}</code> - польза или причина, по которой эта функциональность необходима.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Выделить <strong>Roles</strong> возникшие в процессе формирования <strong>User Story</strong></p>
+</li>
+<li>
+<p>Выделить еще несколько <strong>EPICS</strong> для будущей декомпозиции.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -503,14 +529,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_example">Example</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="https://github.com/JD2-86/interview-helper" class="bare">https://github.com/JD2-86/interview-helper</a></p>
+<p><a href="https://miro.com/app/board/uXjVOY8hA_k=/?invite_link_id=177006962450" target="_blank" rel="noopener">Mind Map</a></p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-12 15:18:51 UTC
+Last updated 2022-01-12 15:25:43 UTC
 </div>
 </div>
 </body>
