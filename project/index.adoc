@@ -1,0 +1,15 @@
+= Project
+:imagesdir: ../assets/img/project
+:toc: left
+
+Данный блок содержит шаги для поэтапной реализации 'Pet-project', что значительно упростит работу над проектом.
+
+:leveloffset: +1
+
+include::stage-00.adoc[]
+
+include::stage-01.adoc[]
+
+include::themes.adoc[]
+
+:leveloffset: -1

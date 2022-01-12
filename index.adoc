@@ -14,4 +14,6 @@ include::links.adoc[]
 
 include::lessons/index.adoc[]
 
+include::project/index.adoc[]
+
 :leveloffset: -1
