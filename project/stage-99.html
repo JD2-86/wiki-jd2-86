@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Lesson 2: Apache Maven. Intro</title>
+<title>Pet-project</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,84 +438,174 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Lesson 2: Apache Maven. Intro</h1>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_practice">Practice</h2>
+<h2 id="_pet_project">Pet-project</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_задачи">Задачи</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Установить <strong>Apache Maven</strong> (обязательно в директорию: <code>/opt/apache-maven/${version}</code>).</p>
+<p>познакомить с этапами разработки продукта на базе общепринятых методологий;</p>
+</li>
+<li>
+<p>познакомить с инструментами, которые позволяет упростить работу на некоторых этапах разработки;</p>
+</li>
+<li>
+<p>выработать правильный процесс работы над конкретными задачами.</p>
 </li>
 </ul>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_task_1">Task 1</h3>
+<h3 id="_этапы_разработки">Этапы разработки</h3>
+<div class="paragraph">
+<p>Этапы разработки подразумевают наличие какой-то общей идеи. Реализация этой идеи, в виде программного продукта, решит какую-то реальную проблему клиентов данного программного продукта.</p>
+</div>
+<div class="paragraph">
+<p>Все этапы, описанные ниже, подразумеваю циклическое исполнение, а результатом каждого цикла будет являться инкремент (т.е. какая-то минимальная работающая функциональность):</p>
+</div>
+<div class="paragraph">
+<p>Этапы разработки:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Сгенерировать проект с помощью команды: <code>mvn archetype:generate</code>.</p>
+<p>планирование</p>
 </li>
 <li>
-<p>Найти и добавить в зависимости <strong>JUnit 5</strong>.</p>
+<p>разработка UML диаграмм классов</p>
 </li>
 <li>
-<p>Добавить тесты в проект.</p>
+<p>разработка структуры БД</p>
 </li>
 <li>
-<p>Поочередно, с помощью CLI, выполнить ниже приведенные команды и убедиться что они выполнили возложенную на их функцию:</p>
+<p>разбиение запланированной функциональности на задачи</p>
+</li>
+<li>
+<p>реализация задач</p>
+</li>
+<li>
+<p>тестирование задач</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_планирование">Планирование</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Придумать идею для функциональности, которая сделает <strong>product</strong> лучше.</p>
+</li>
+<li>
+<p>Выделить <strong>epics</strong> для этой идеи, т.е. разбить ее на несколько атомарных глобальных функций.</p>
+</li>
+<li>
+<p>Для каждого <strong>epic</strong> выделить <strong>stories</strong>, реализация которых позволит считать данную функциональность завершенной. Пример <strong>story</strong>:</p>
+</li>
+</ol>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><em>As a</em> <strong>user</strong>, <em>I want to</em> <strong>register in the service</strong> <em>so that I can</em> <strong>create my own garage</strong></p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Для планирования можно использовать различные инструменты. Например, можно использовать сервис для построения <strong>Mind Map</strong>: <a href="https://coggle.it">coggle</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_разработка_uml_диаграмм_классов">Разработка UML диаграмм классов</h4>
+<div class="paragraph">
+<p>Для разработки UML диаграмм можно использовать различные инструменты. Например, можно использовать сервис <a href="https://cdraw.io">draw.io</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_разработка_структуры_бд">Разработка структуры БД</h4>
+<div class="paragraph">
+<p>Для разработки структуры БД можно использовать различные инструменты. Например, можно использовать сервис <a href="https://www.dbdesigner.net">DB DESIGNER</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_разбиение_запланированной_функциональности_на_задачи">Разбиение запланированной функциональности на задачи</h4>
+<div class="paragraph">
+<p>Далее идет процесс разбиения <strong>story</strong> для <strong>project</strong> на несколько <strong>ticket</strong> (задача) для разработки. На этом этапе на <strong>dashboard</strong> необходимого <strong>project</strong> в колонке <strong>To do</strong> создаются <strong>tickets</strong>, которые позволяют реализовать данную <strong>story</strong>. Как пример <strong>story</strong> <em>As a user, I want to register in the service so that I can create my own garage</em> потребует как минимум создания одного <strong>ticket</strong>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>BS-1. feat: registration user
+
+- [ ] registration view
+- [ ] controller
+- [ ] service
+- [ ] repository
+- [ ] entity</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Можно разбивать <strong>story</strong> на более мелкие <strong>tickets</strong>, в зависимости от сложности <strong>ticket</strong> и возможности команды параллельно работать над <strong>tickets</strong> для одной <strong>story</strong>, например:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>- BS-1. feat: create registration view
+- BS-2. feat: create registration controller
+- BS-3. feat: create registration service
+- BS-4. feat: create registration repository
+- BS-5. feat: create registration entity</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_реализация_задач">Реализация задач</h4>
+<div class="paragraph">
+<p><strong>Ticket</strong> на этом этапе перемещается на <strong>dashboard</strong> для <strong>project</strong> из колонки <strong>To do</strong> в колонку <strong>In progress</strong> и с помощью таймера засекается время работы над задачей.</p>
+</div>
+<div class="paragraph">
+<p>При технической реализации задач обычно применяется документация или различные гайды тех технологий, которые используются в проекте. Примером может служить:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>mvn compile</code></p>
+<p><a href="https://spring.io/guides">Spring Guides</a></p>
 </li>
 <li>
-<p><code>mvn clean</code></p>
+<p><a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/">Spring Framework Documentation</a></p>
 </li>
 <li>
-<p><code>mvn test</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-<li>
-<p><code>mvn package</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
+<p><a href="https://hibernate.org/orm/documentation/6.0/">Hibernate ORM. Documentation - 6.0</a></p>
 </li>
 </ul>
 </div>
-</li>
-</ul>
+<div class="paragraph">
+<p>Для решения проблем, которые могут возникнуть при реализации, использую любую поисковую систему. Чаще всего решения данных проблем можно найти на сервисе <a href="https://stackoverflow.com/">stackoverflow</a></p>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_тестирование_задач">Тестирование задач</h4>
+<div class="paragraph">
+<p>Разработчики, для тестирования новой или уже существующей функциональности:</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_homework">Homework</h2>
-<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Изучить теоретический материал.</p>
+<p>пишут <strong>unit-tests</strong>, которые позволяют протестировать небольшую её часть;</p>
 </li>
 <li>
-<p>Зарегистрироваться на AWS: <a href="https://process.rakovets.by/course/java/enterprise/#_amazon_web_service" class="bare">https://process.rakovets.by/course/java/enterprise/#_amazon_web_service</a></p>
+<p>применяют различные инструменты для модульных тестов. Например, используют <a href="https://www.postman.com/"><strong>Postman</strong></a> для тестирования <strong>API</strong> разработанного <strong>REST-service</strong>;</p>
 </li>
 <li>
-<p>Выполнить задание:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/rakovets/course-java-tools/blob/master/apache-maven/intro/src/main/resources/practice/apache-maven-intro.adoc">Apache Maven: Intro</a>.</p>
+<p>проводят функциональное тестирование всего продукта. Фактически, эмулируют поведение клиента и смотрят как сервис реагирует на это.</p>
 </li>
 </ul>
 </div>
-</li>
-</ul>
+<div class="paragraph">
+<p>После этого этапа <strong>ticket</strong> перемещается на <strong>dashboard</strong> для <strong>project</strong> из колонки <strong>In progress</strong> в колонку <strong>Done</strong> и в конец описания этого <strong>ticket</strong> добавляется время затраченное на его реализацию и тестирование. Например, когда затраченное на <strong>ticket</strong> время 1 день (8 часов) и 4 часа, тогда делается запись <code>1d 4h</code>.</p>
+</div>
+</div>
 </div>
 </div>
 </div>

@@ -466,6 +466,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_lesson_12_intro_to_jpa">2.12. Lesson 12: Intro to JPA</a></li>
 </ul>
 </li>
+<li><a href="#_project">3. Project</a>
+<ul class="sectlevel2">
+<li><a href="#_stage_00_инициализация_проекта">3.1. Stage 00: Инициализация проекта</a></li>
+<li><a href="#_stage_01_проработка_функционала_проекта">3.2. Stage 01: Проработка функционала проекта</a></li>
+<li><a href="#_themes_for_the_projects">3.3. Themes for the projects</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -591,6 +598,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li>
 <p><a href="https://youtu.be/RauHxlrEo0Y" target="_blank" rel="noopener">Lesson 11: Data Access Object (DAO)</a></p>
+</li>
+<li>
+<p><a href="https://youtu.be/6ZjaO8hGiQA" target="_blank" rel="noopener">Lesson 12: Java Persistence API (JPA)</a></p>
 </li>
 </ul>
 </div>
@@ -1251,10 +1261,548 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_project">3. Project</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Данный блок содержит шаги для поэтапной реализации 'Pet-project', что значительно упростит работу над проектом.</p>
+</div>
+<div class="sect2">
+<h3 id="_stage_00_инициализация_проекта">3.1. Stage 00: Инициализация проекта</h3>
+<div class="paragraph">
+<p>На подготовительном этапе прорабатывается идея проекта и его особенности. После чего необходимо инициализировать git-repository для проекта.</p>
+</div>
+<div class="sect3">
+<h4 id="_tasks">3.1.1. Tasks</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Создать remote repository для проекта в <strong>Organisation</strong>: <a href="https://github.com/orgs/JD2-86/" class="bare">https://github.com/orgs/JD2-86/</a></p>
+</li>
+<li>
+<p>Добавить в проект файл <code>README.adoc</code>, который содержит описание проекта. Пример шаблона приведен ниже.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">Шаблон <code>README.adoc</code> для проекта</div>
+<div class="content">
+<pre>= ${your-project-name}
+
+== Description
+
+==== Какою проблему данный проект решает или что нового приносит для пользователей?
+
+* Пункт 1
+* Пункт 2
+* ...
+* Пункт N
+
+==== Потенциальные пользователи
+
+* Пункт 1
+* Пункт 2
+* ...
+* Пункт N
+
+==== Аналогичные приложения
+
+* Пункт 1
+* Пункт 2
+* ...
+* Пункт N
+
+==== Конкурентное преимущество
+
+* Пункт 1
+* Пункт 2
+* ...
+* Пункт N</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example">3.1.2. Example</h4>
+<div class="paragraph">
+<p><a href="https://github.com/JD2-86/interview-helper" class="bare">https://github.com/JD2-86/interview-helper</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_stage_01_проработка_функционала_проекта">3.2. Stage 01: Проработка функционала проекта</h3>
+<div class="paragraph">
+<p>На этом этапе прорабатывается функциональность, которую будет выполнять приложение. Нет никаких ограничений сверху по количеству функционала, но в то же самое время не стоит продумывать проект на месяцы разработки вперед.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<strong>MVP</strong> - <strong>Minimal Viable Product</strong> (<strong>минимально жизнеспособный продукт</strong>)
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../assets/img/project/mvp.jpg" alt="MVP">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tasks_2">3.2.1. Tasks</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Выделить CORE (ядро) вашего функционала, которое будет выступать как <strong>MVP</strong> для вашего проекта. Оно будет являться <strong>EPIC 1</strong>, с которого и начнется разработка проекта.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../assets/img/project/user-story-diagram.png" alt="User story diagram">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Сформулировать для этого <strong>EPIC</strong> <strong>User Stories</strong>, т.е. произвести декомпозицию глобальной задачи в пользовательский функционал. <strong>User Story</strong> должны соответствовать шаблону:</p>
+<div class="literalblock">
+<div class="content">
+<pre>КАК ${ROLE} ХОЧУ ${FUNCTIONALITY} ПОТОМУ ЧТО ${PROFIT}</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>${ROLE}</code> - роль пользователя в системе</p>
+</li>
+<li>
+<p><code>${FUNCTIONALITY}</code> - функциональность, которая должна быть доступна этой пользовательской роли (некоторое ОДНО действие)</p>
+</li>
+<li>
+<p><code>${PROFIT}</code> - польза или причина, по которой эта функциональность необходима.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Выделить <strong>Roles</strong> возникшие в процессе формирования <strong>User Story</strong></p>
+</li>
+<li>
+<p>Выделить еще несколько <strong>EPICS</strong> для будущей декомпозиции.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_2">3.2.2. Example</h4>
+<div class="paragraph">
+<p><a href="https://miro.com/app/board/uXjVOY8hA_k=/?invite_link_id=177006962450" class="bare">https://miro.com/app/board/uXjVOY8hA_k=/?invite_link_id=177006962450</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_themes_for_the_projects">3.3. Themes for the projects</h3>
+<div class="paragraph">
+<p>В качестве темы для проекта можно выбрать любую тему, но ЖЕЛАТЕЛЬНО выбрать тему, которая нравится или близка конкретно Вам. Так же в основе проекта можно заложить какую-то интересную идею.</p>
+</div>
+<div class="paragraph">
+<p>Нижеперечисленные темы, действия в системе и модели являются лишь примерами и подлежат более детальному анализу и декомпозиции.</p>
+</div>
+<div class="sect3">
+<h4 id="_видеотека">3.3.1. Видеотека</h4>
+<div class="sect4">
+<h5 id="_модели">Модели.</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Фильм</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Название</p>
+</li>
+<li>
+<p>Актёры</p>
+</li>
+<li>
+<p>Режиссёр</p>
+</li>
+<li>
+<p>Дата выхода</p>
+</li>
+<li>
+<p>Страна, в которой выпущен фильм</p>
+</li>
+<li>
+<p>Жанр</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Актёр/режиссёр</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ФИО</p>
+</li>
+<li>
+<p>Дата рождения</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Пользователь</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ФИО</p>
+</li>
+<li>
+<p>Пароль</p>
+</li>
+<li>
+<p>Адрес почтового ящика</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Отзывы</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Фильм</p>
+</li>
+<li>
+<p>Пользователь</p>
+</li>
+<li>
+<p>Текст</p>
+</li>
+<li>
+<p>Оценка</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_действия_в_системе">Действия в системе</h5>
+<div class="sect5">
+<h6 id="_действия_по_добавлению">Действия по добавлению:</h6>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Зарегистрировать пользователя в системе.</p>
+</li>
+<li>
+<p>Добавить актёра/режиссёра.</p>
+</li>
+<li>
+<p>Добавить фильм, выбрав съёмочную группу.</p>
+</li>
+<li>
+<p>Добавить отзыв пользователя о фильме.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_действия_по_просмотру">Действия по просмотру:</h6>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Просмотреть список всех фильмов, вышедших на экраны в выбранном/введённом году.</p>
+</li>
+<li>
+<p>Просмотреть информацию об актёрах, снимавшихся в выбранном фильме.</p>
+</li>
+<li>
+<p>Просмотреть все отзывы о выбранном фильме.</p>
+</li>
+<li>
+<p>Просмотреть все фильмы, в которых снимался выбранный актёр.</p>
+</li>
+<li>
+<p>Просмотреть все отзывы выбранного пользователя.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_интернет_магазин">3.3.2. Интернет-магазин.</h4>
+<div class="sect4">
+<h5 id="_модели_2">Модели.</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Покупатель</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Имя</p>
+</li>
+<li>
+<p>Фамилия</p>
+</li>
+<li>
+<p>Почтовый ящик</p>
+</li>
+<li>
+<p>Пароль</p>
+</li>
+<li>
+<p>Телефон</p>
+</li>
+<li>
+<p>Адрес</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Заказ</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Номер</p>
+</li>
+<li>
+<p>Товары в заказе</p>
+</li>
+<li>
+<p>Дата оформления заказа</p>
+</li>
+<li>
+<p>Дата закрытия заказа</p>
+</li>
+<li>
+<p>Статус заказа</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Товар</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Название</p>
+</li>
+<li>
+<p>Описание</p>
+</li>
+<li>
+<p>Цена</p>
+</li>
+<li>
+<p>Оставшееся количество</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Для товаров в заказе хранить: название и количество.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_действия_в_системе_2">Действия в системе.</h5>
+<div class="sect5">
+<h6 id="_ограничения">Ограничения:</h6>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Пользователь не сможет оформить заказ, если на складе недостаточно товаров выбранного типа</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_действия_по_добавлению_2">Действия по добавлению:</h6>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Добавить в систему нового пользователя.</p>
+</li>
+<li>
+<p>Добавить в систему новый товар.</p>
+</li>
+<li>
+<p>Оформить заказ для выбранного пользователя: с добавлением товаров/выбором их количества.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_действия_по_просмотру_2">Действия по просмотру:</h6>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Просмотреть список всех пользователей системы.</p>
+</li>
+<li>
+<p>Просмотреть список всех заказов выбранного пользователя.</p>
+</li>
+<li>
+<p>Просмотреть список всех товаров в системе.</p>
+</li>
+<li>
+<p>Просмотреть список всех заказов, в которые включен выбранный товар.</p>
+</li>
+<li>
+<p>Удалить заказы, сделанные раньше введённой даты.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_обучение">3.3.3. Обучение.</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Преподаватель</strong> объявляет запись на <strong>Курс</strong>.</p>
+</li>
+<li>
+<p><strong>Студент</strong> записывается на <strong>Курс</strong>, обучается и по окончании <strong>Преподаватель</strong> выставляет <strong>Оценку</strong>, которая сохраняется в <strong>Архиве</strong>.</p>
+</li>
+<li>
+<p><strong>Студентов</strong>, <strong>Преподавателей</strong> и <strong>Курсов</strong> при обучении может быть несколько.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_платежи">3.3.4. Платежи.</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Клиент</strong> имеет <strong>Счет</strong> в банке и <strong>Кредитную Карту</strong>.</p>
+</li>
+<li>
+<p><strong>Клиент</strong> может оплатить <strong>Заказ</strong>, сделать платеж на другой <strong>Счет</strong>, заблокировать <strong>Кредитную Карту</strong> и аннулировать <strong>Счет</strong>.</p>
+</li>
+<li>
+<p><strong>Администратор</strong> может заблокировать <strong>Кредитную Карту</strong> за превышение кредита.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_вступительные_экзамены">3.3.5. Вступительные экзамены.</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Абитуриент</strong> регистрируется на <strong>Факультет</strong>, сдает <strong>Экзамены</strong>.</p>
+</li>
+<li>
+<p><strong>Преподаватель</strong> выставляет <strong>Оценку</strong>.</p>
+</li>
+<li>
+<p><strong>Система</strong> подсчитывает средний балл и определяет <strong>Абитуриентов</strong>, зачисленных в учебное заведение.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_городской_транспорт">3.3.6. Городской транспорт.</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>На <strong>Маршрут</strong> назначаются <strong>Автобус</strong>, <strong>Троллейбус</strong> или <strong>Трамвай</strong>.</p>
+</li>
+<li>
+<p><strong>Транспортные средства</strong> должны двигаться с определенным для каждого <strong>Маршрута</strong> интервалом.</p>
+</li>
+<li>
+<p>При поломке на <strong>Маршрут</strong> должен выходить резервный транспорт или увеличиваться интервал движения.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_заказ_гостиницы">3.3.7. Заказ гостиницы.</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Клиент</strong> оставляет <strong>Заявку</strong> на <strong>Номер</strong>.</p>
+</li>
+<li>
+<p>Указав количество мест в номере, класса апартаментов и времени пребывания.</p>
+</li>
+<li>
+<p><strong>Администратор</strong> рассматривает <strong>Заявку</strong>, подтверждает или отклоняет.</p>
+</li>
+<li>
+<p><strong>Результат</strong> просматривает <strong>Клиент</strong>.</p>
+</li>
+<li>
+<p>В случае подтверждения <strong>Заявки</strong> <strong>Клиент</strong> оплачивает услуги.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_прокат_автомобилей">3.3.8. Прокат автомобилей.</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Клиент</strong> выбирает <strong>Автомобиль</strong> из списка доступных.</p>
+</li>
+<li>
+<p>Заполняет форму <strong>Заказа</strong>, указывая паспортные данные, срок аренды.</p>
+</li>
+<li>
+<p><strong>Администратор</strong> может отклонить <strong>Заявку</strong>, указав причины отказа.</p>
+</li>
+<li>
+<p>При подтверждении <strong>Заявки</strong>, <strong>Клиент</strong> оплачивает <strong>Заказ</strong>. <strong>Система</strong> выписывает сумму.</p>
+</li>
+<li>
+<p>В случае повреждения <strong>Автомобиля</strong> <strong>Клиентом</strong>, <strong>Администратор</strong> вносит соответствующие пометки.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_интернет_провайдер">3.3.9. Интернет-провайдер.</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_аукцион">3.3.10. Аукцион.</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_тотализатор">3.3.11. Тотализатор.</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_социологический_опросник">3.3.12. Социологический Опросник.</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_аудиовидеоигротека">3.3.13. Аудио/Видео/Игротека.</h4>
+
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-10 17:46:09 UTC
+Last updated 2022-01-12 15:15:54 UTC
 </div>
 </div>
 </body>

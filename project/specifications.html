@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Lesson 2: Apache Maven. Intro</title>
+<title>Требования к проектам</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,56 +438,82 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Lesson 2: Apache Maven. Intro</h1>
+<h1>Требования к проектам</h1>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_practice">Practice</h2>
+<h2 id="_project_with_jakarta_ee">Project with Jakarta EE</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_функциональные_части">Функциональные части</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Установить <strong>Apache Maven</strong> (обязательно в директорию: <code>/opt/apache-maven/${version}</code>).</p>
+<p>Слой базы данных:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>сущности (Entities)</p>
+</li>
+<li>
+<p>DAOs (Data Access Objects)</p>
 </li>
 </ul>
+</div>
+</li>
+<li>
+<p>Слой сервисов.</p>
+</li>
+<li>
+<p>Презентационный слой:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Сервлеты.</p>
+</li>
+<li>
+<p>JSP.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_task_1">Task 1</h3>
+<h3 id="_требования_к_слоям">Требования к слоям</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Сгенерировать проект с помощью команды: <code>mvn archetype:generate</code>.</p>
+<p>Организацию соединения с базой данных вынести в отдельный класс, метод которого возвращает соединение.</p>
 </li>
 <li>
-<p>Найти и добавить в зависимости <strong>JUnit 5</strong>.</p>
+<p>Каждый сервис в слое сервисов должен быть реализован с помощью паттерна Singleton.</p>
 </li>
 <li>
-<p>Добавить тесты в проект.</p>
-</li>
-<li>
-<p>Поочередно, с помощью CLI, выполнить ниже приведенные команды и убедиться что они выполнили возложенную на их функцию:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>mvn compile</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-<li>
-<p><code>mvn test</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-<li>
-<p><code>mvn package</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
+<p>Информация в базе данных должна храниться в нормализованном виде.</p>
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_дополнительные_требования">Дополнительные требования</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Реализовать функцию переключения языков в системе.</p>
+</li>
+<li>
+<p>В системе обязательно должно присутствовать формирование файла (отчёт, статистика и т.д.), который пользователь может скачать с сайта.</p>
+</li>
+<li>
+<p>В системе должна быть реализована функция логина с помощью адреса почты и пароля.</p>
+</li>
+<li>
+<p>Должна быть реализована авторизация пользователя (набор ролей с соответствующими защищёнными страницами).</p>
+</li>
+<li>
+<p>Если пользователь не вошёл в систему, содержимое сайта должно быть недоступно (перебрасывать на страницу логина). Реализовать возможность выхода из системы.</p>
 </li>
 </ul>
 </div>
@@ -495,27 +521,172 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_homework">Homework</h2>
+<h2 id="_project_with_spring_and_hibernate">Project with Spring and Hibernate</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_общие_требования">Общие требования</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Изучить теоретический материал.</p>
-</li>
-<li>
-<p>Зарегистрироваться на AWS: <a href="https://process.rakovets.by/course/java/enterprise/#_amazon_web_service" class="bare">https://process.rakovets.by/course/java/enterprise/#_amazon_web_service</a></p>
-</li>
-<li>
-<p>Выполнить задание:</p>
+<p>Проект состоит из двух независимых сервисов, которые в свою очередь имеют много-модульную структуру:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://github.com/rakovets/course-java-tools/blob/master/apache-maven/intro/src/main/resources/practice/apache-maven-intro.adoc">Apache Maven: Intro</a>.</p>
+<p><code>web</code> - сервис для server-side rendering</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>rest-client</code> - модуль содержащий REST clients для запросов в другие REST сервисы.</p>
+</li>
+<li>
+<p><code>mvc</code> - модуль содержащий templates и отвечающий за генерацию web-pages.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>rest-api</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>api</code> - модуль с описанием REST API сервиса</p>
+</li>
+<li>
+<p><code>impl</code> - модуль с реализацией REST API</p>
+</li>
+<li>
+<p><code>dal</code> - модуль для работы с данными</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
+</div>
+</li>
+<li>
+<p>Сборка проекта должна осуществляться средствами <strong>Apache Maven</strong>.</p>
+</li>
+<li>
+<p>Проект представляет собой <strong>Spring Web</strong> или <strong>Spring Boot</strong> приложение.</p>
+</li>
+<li>
+<p>Миграция данных должна осуществляться по средствам <strong>Liquibase</strong></p>
+</li>
+<li>
+<p>Использование <strong>Spring Security</strong> в для аутентификации и авторизации в системе</p>
+</li>
+<li>
+<p>Наличие роли администратора, а также наличие доступных лишь администратору возможностей.</p>
+</li>
+<li>
+<p>Покрытие кода unit-тестами не менее 80%.</p>
+</li>
+<li>
+<p>Поддержка работы с кириллицей.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_требования_к_модулю_dal">Требования к модулю <code>dal</code></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>В качестве RDBMS использовать <strong>PostgreSQL</strong>.</p>
+</li>
+<li>
+<p>В качестве ORM использовать <strong>Hibernate</strong>.</p>
+</li>
+<li>
+<p>Использование кэша второго уровня <strong>Hibernate</strong>.</p>
+</li>
+<li>
+<p>Полная транзакционность, обеспечиваемая за счет интеграции <strong>Hibernate</strong> и <strong>Spring</strong>.</p>
+</li>
+<li>
+<p>Использование <strong>Spring Data</strong> для создания запросов.</p>
+</li>
+<li>
+<p>Не менее 6 значимых сущностей (<code>@Entity</code>).</p>
+</li>
+<li>
+<p><code>GenericDao</code> – параметризованный класс с конкретными реализациями – наследниками.</p>
+</li>
+<li>
+<p>Пароля пользователя хранится в зашифрованном виде.</p>
+</li>
+<li>
+<p>Наличие:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>связей: <code>1-1</code>, <code>1-n</code>, <code>n-n</code>.</p>
+</li>
+<li>
+<p>Embedded-сущностей.</p>
+</li>
+<li>
+<p>наследования в сущностях.</p>
+</li>
+<li>
+<p>оптимистической блокировки сущности.</p>
+</li>
+<li>
+<p>запросов с ограничением выборки (пагинация).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_требования_к_модулю_impl">Требования к модулю <code>impl</code></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Наличие логирования (<code>log4j2</code>), запись в файл.</p>
+</li>
+<li>
+<p>Часть логирования осуществлять с помощью аспектов Spring.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_требования_к_модулю_mvc">Требования к модулю <code>mvc</code></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Для реализации слоя представления использовать связку <strong>Spring MVC</strong> + <strong>Thymeleaf</strong>.</p>
+</li>
+<li>
+<p>Реализовать возможность редактирования сущности на странице с учётом оптимистической блокировки.</p>
+</li>
+<li>
+<p>GUI должен представлять собой полноценное web-приложение с не менее чем 10-ю веб-страницами, логически связанных между собой.</p>
+</li>
+<li>
+<p>Реализовать интернационализацию, используя Spring.</p>
+</li>
+<li>
+<p>Обязательно реализовать страницы:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>регистрации пользователя</p>
+</li>
+<li>
+<p>с пагинацией</p>
+</li>
+<li>
+<p>для редактирования сущности с возможностью редактирования несколькими пользователями одновременно для демонстрации оптимистической блокировки.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>

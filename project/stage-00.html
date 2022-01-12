@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Lesson 2: Apache Maven. Intro</title>
+<title>Stage 00: Инициализация проекта</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,84 +438,72 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Lesson 2: Apache Maven. Intro</h1>
+<h1>Stage 00: Инициализация проекта</h1>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_practice">Practice</h2>
+<div id="preamble">
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Установить <strong>Apache Maven</strong> (обязательно в директорию: <code>/opt/apache-maven/${version}</code>).</p>
-</li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="_task_1">Task 1</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Сгенерировать проект с помощью команды: <code>mvn archetype:generate</code>.</p>
-</li>
-<li>
-<p>Найти и добавить в зависимости <strong>JUnit 5</strong>.</p>
-</li>
-<li>
-<p>Добавить тесты в проект.</p>
-</li>
-<li>
-<p>Поочередно, с помощью CLI, выполнить ниже приведенные команды и убедиться что они выполнили возложенную на их функцию:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>mvn compile</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-<li>
-<p><code>mvn test</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-<li>
-<p><code>mvn package</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
+<div class="paragraph">
+<p>На подготовительном этапе прорабатывается идея проекта и его особенности. После чего необходимо инициализировать git-repository для проекта.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_homework">Homework</h2>
+<h2 id="_tasks">Tasks</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Изучить теоретический материал.</p>
+<p>Создать remote repository для проекта в <strong>Organisation</strong>: <a href="https://github.com/orgs/JD2-86/" class="bare">https://github.com/orgs/JD2-86/</a></p>
 </li>
 <li>
-<p>Зарегистрироваться на AWS: <a href="https://process.rakovets.by/course/java/enterprise/#_amazon_web_service" class="bare">https://process.rakovets.by/course/java/enterprise/#_amazon_web_service</a></p>
-</li>
-<li>
-<p>Выполнить задание:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/rakovets/course-java-tools/blob/master/apache-maven/intro/src/main/resources/practice/apache-maven-intro.adoc">Apache Maven: Intro</a>.</p>
+<p>Добавить в проект файл <code>README.adoc</code>, который содержит описание проекта. Пример шаблона приведен ниже.</p>
 </li>
 </ul>
 </div>
-</li>
-</ul>
+<div class="listingblock">
+<div class="title">Шаблон <code>README.adoc</code> для проекта</div>
+<div class="content">
+<pre>= ${your-project-name}
+
+== Description
+
+==== Какою проблему данный проект решает или что нового приносит для пользователей?
+
+* Пункт 1
+* Пункт 2
+* ...
+* Пункт N
+
+==== Потенциальные пользователи
+
+* Пункт 1
+* Пункт 2
+* ...
+* Пункт N
+
+==== Аналогичные приложения
+
+* Пункт 1
+* Пункт 2
+* ...
+* Пункт N
+
+==== Конкурентное преимущество
+
+* Пункт 1
+* Пункт 2
+* ...
+* Пункт N</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example">Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/JD2-86/interview-helper" class="bare">https://github.com/JD2-86/interview-helper</a></p>
 </div>
 </div>
 </div>

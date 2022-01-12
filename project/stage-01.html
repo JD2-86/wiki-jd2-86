@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Lesson 2: Apache Maven. Intro</title>
+<title>Stage 01: Проработка функционала проекта</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,84 +438,86 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Lesson 2: Apache Maven. Intro</h1>
+<h1>Stage 01: Проработка функционала проекта</h1>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_practice">Practice</h2>
+<div id="preamble">
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Установить <strong>Apache Maven</strong> (обязательно в директорию: <code>/opt/apache-maven/${version}</code>).</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>На этом этапе прорабатывается функциональность, которую будет выполнять приложение. Нет никаких ограничений сверху по количеству функционала, но в то же самое время не стоит продумывать проект на месяцы разработки вперед.</p>
 </div>
-<div class="sect2">
-<h3 id="_task_1">Task 1</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Сгенерировать проект с помощью команды: <code>mvn archetype:generate</code>.</p>
-</li>
-<li>
-<p>Найти и добавить в зависимости <strong>JUnit 5</strong>.</p>
-</li>
-<li>
-<p>Добавить тесты в проект.</p>
-</li>
-<li>
-<p>Поочередно, с помощью CLI, выполнить ниже приведенные команды и убедиться что они выполнили возложенную на их функцию:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>mvn compile</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-<li>
-<p><code>mvn test</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-<li>
-<p><code>mvn package</code></p>
-</li>
-<li>
-<p><code>mvn clean</code></p>
-</li>
-</ul>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<strong>MVP</strong> - <strong>Minimal Viable Product</strong> (<strong>минимально жизнеспособный продукт</strong>)
+</td>
+</tr>
+</table>
 </div>
-</li>
-</ul>
+<div class="imageblock">
+<div class="content">
+<img src="mvp.jpg" alt="MVP">
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_homework">Homework</h2>
+<h2 id="_tasks">Tasks</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Изучить теоретический материал.</p>
+<p>Выделить CORE (ядро) вашего функционала, которое будет выступать как <strong>MVP</strong> для вашего проекта. Оно будет являться <strong>EPIC 1</strong>, с которого и начнется разработка проекта.</p>
 </li>
-<li>
-<p>Зарегистрироваться на AWS: <a href="https://process.rakovets.by/course/java/enterprise/#_amazon_web_service" class="bare">https://process.rakovets.by/course/java/enterprise/#_amazon_web_service</a></p>
-</li>
-<li>
-<p>Выполнить задание:</p>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="user-story-diagram.png" alt="User story diagram">
+</div>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://github.com/rakovets/course-java-tools/blob/master/apache-maven/intro/src/main/resources/practice/apache-maven-intro.adoc">Apache Maven: Intro</a>.</p>
+<p>Сформулировать для этого <strong>EPIC</strong> <strong>User Stories</strong>, т.е. произвести декомпозицию глобальной задачи в пользовательский функционал. <strong>User Story</strong> должны соответствовать шаблону:</p>
+<div class="literalblock">
+<div class="content">
+<pre>КАК ${ROLE} ХОЧУ ${FUNCTIONALITY} ПОТОМУ ЧТО ${PROFIT}</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>${ROLE}</code> - роль пользователя в системе</p>
+</li>
+<li>
+<p><code>${FUNCTIONALITY}</code> - функциональность, которая должна быть доступна этой пользовательской роли (некоторое ОДНО действие)</p>
+</li>
+<li>
+<p><code>${PROFIT}</code> - польза или причина, по которой эта функциональность необходима.</p>
 </li>
 </ul>
 </div>
 </li>
+<li>
+<p>Выделить <strong>Roles</strong> возникшие в процессе формирования <strong>User Story</strong></p>
+</li>
+<li>
+<p>Выделить еще несколько <strong>EPICS</strong> для будущей декомпозиции.</p>
+</li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example">Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://miro.com/app/board/uXjVOY8hA_k=/?invite_link_id=177006962450" class="bare">https://miro.com/app/board/uXjVOY8hA_k=/?invite_link_id=177006962450</a></p>
 </div>
 </div>
 </div>
