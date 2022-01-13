@@ -28,6 +28,7 @@
 * link:https://youtu.be/j4oDBGNWtys[How to create an IAM user to AWS?^]
 * link:https://youtu.be/jIxiPgXZ2W8[How to create an EC2 instance to AWS?^]
 * link:https://youtu.be/wJi5i_Ty5pQ[How to set up Java environment an EC2 instance to AWS?^]
+* link:https://youtu.be/KAL289iZfgk[How create an RDS instance to AWS?]
 
 === Lessons
 
