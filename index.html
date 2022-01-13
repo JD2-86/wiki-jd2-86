@@ -471,7 +471,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_stage_01_инициализация_проекта">3.1. Stage 01: Инициализация проекта</a></li>
 <li><a href="#_stage_02_проработка_функционала_проекта">3.2. Stage 02: Проработка функционала проекта</a></li>
-<li><a href="#_themes_for_the_projects">3.3. Themes for the projects</a></li>
+<li><a href="#_stage_03_проработка_domain_model">3.3. Stage 03: Проработка Domain Model</a></li>
+<li><a href="#_themes_for_the_projects">3.4. Themes for the projects</a></li>
 </ul>
 </li>
 </ul>
@@ -1440,7 +1441,87 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_themes_for_the_projects">3.3. Themes for the projects</h3>
+<h3 id="_stage_03_проработка_domain_model">3.3. Stage 03: Проработка Domain Model</h3>
+<div class="paragraph">
+<p>На этом этапе прорабатываются <strong>Domain Model</strong>, т.е. фактически Java-classes, которые являются представлением реальных (бизнес) сущностей вашего проекта (domain). Выделяются основополагающие атрибуты для этих сущностей.</p>
+</div>
+<div class="sect3">
+<h4 id="_tasks_3">3.3.1. Tasks</h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Все нижеописанное, удобнее (на данном этапе) реализовывать в виде <strong>UML Class Diagram</strong>. В качестве online-инструмента может выступать, например: <a href="https://app.diagrams.net/">draw.io</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Выделить ключевые <strong>Domain Models</strong> в вашем проекте.</p>
+</li>
+<li>
+<p>Выделить ключевые аттрибуты для каждой <strong>Domain model</strong>.</p>
+</li>
+<li>
+<p>Определить типы связей между сущностями (One to One, One to Many, Many to Many)</p>
+</li>
+<li>
+<p>Добавить <strong>UML Class Diagram</strong> в проект.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+К проработке Domain Model необходимо будет возвращаться по мере развития проекта и добавления нового функционала.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_3">3.3.2. Example</h4>
+<div class="paragraph">
+<p>Open with <strong>draw.io</strong> following diagram:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/JD2-86/interview-helper/blob/master/interview-helper.drawio">UML Class Diagram with draw.io</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_versioning">3.3.3. Versioning</h4>
+<div class="paragraph">
+<p>Для прозрачности понимания и использования следует придерживаться следующих принципов:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Каждая <strong>VERSION</strong> продукта эквивалентен одному <strong>EPIC</strong>.</p>
+</li>
+<li>
+<p>Каждый последующие <strong>EPIC</strong> увеличивают <strong>VERSION</strong> продукта итеративно, т.е. <code>+1</code> к версии.</p>
+</li>
+<li>
+<p><strong>UML Class Diagram</strong> должны составляться под каждую новую <strong>VERSION</strong> продукта, на базе предыдущей.</p>
+</li>
+<li>
+<p><strong>UML Class Diagrams</strong> для прошлых <strong>VERSIONS</strong> должны храниться в первоначальном состоянии, а не измененными в рамках другой <strong>VERSION</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_themes_for_the_projects">3.4. Themes for the projects</h3>
 <div class="paragraph">
 <p>В качестве темы для проекта можно выбрать любую тему, но ЖЕЛАТЕЛЬНО выбрать тему, которая нравится или близка конкретно Вам. Так же в основе проекта можно заложить какую-то интересную идею.</p>
 </div>
@@ -1448,7 +1529,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Нижеперечисленные темы, действия в системе и модели являются лишь примерами и подлежат более детальному анализу и декомпозиции.</p>
 </div>
 <div class="sect3">
-<h4 id="_видеотека">3.3.1. Видеотека</h4>
+<h4 id="_видеотека">3.4.1. Видеотека</h4>
 <div class="sect4">
 <h5 id="_модели">Модели.</h5>
 <div class="olist arabic">
@@ -1575,7 +1656,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_интернет_магазин">3.3.2. Интернет-магазин.</h4>
+<h4 id="_интернет_магазин">3.4.2. Интернет-магазин.</h4>
 <div class="sect4">
 <h5 id="_модели_2">Модели.</h5>
 <div class="olist arabic">
@@ -1705,7 +1786,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_обучение">3.3.3. Обучение.</h4>
+<h4 id="_обучение">3.4.3. Обучение.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1721,7 +1802,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_платежи">3.3.4. Платежи.</h4>
+<h4 id="_платежи">3.4.4. Платежи.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1737,7 +1818,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_вступительные_экзамены">3.3.5. Вступительные экзамены.</h4>
+<h4 id="_вступительные_экзамены">3.4.5. Вступительные экзамены.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1753,7 +1834,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_городской_транспорт">3.3.6. Городской транспорт.</h4>
+<h4 id="_городской_транспорт">3.4.6. Городской транспорт.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1769,7 +1850,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_заказ_гостиницы">3.3.7. Заказ гостиницы.</h4>
+<h4 id="_заказ_гостиницы">3.4.7. Заказ гостиницы.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1791,7 +1872,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_прокат_автомобилей">3.3.8. Прокат автомобилей.</h4>
+<h4 id="_прокат_автомобилей">3.4.8. Прокат автомобилей.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1813,23 +1894,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_интернет_провайдер">3.3.9. Интернет-провайдер.</h4>
+<h4 id="_интернет_провайдер">3.4.9. Интернет-провайдер.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_аукцион">3.3.10. Аукцион.</h4>
+<h4 id="_аукцион">3.4.10. Аукцион.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_тотализатор">3.3.11. Тотализатор.</h4>
+<h4 id="_тотализатор">3.4.11. Тотализатор.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_социологический_опросник">3.3.12. Социологический Опросник.</h4>
+<h4 id="_социологический_опросник">3.4.12. Социологический Опросник.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_аудиовидеоигротека">3.3.13. Аудио/Видео/Игротека.</h4>
+<h4 id="_аудиовидеоигротека">3.4.13. Аудио/Видео/Игротека.</h4>
 
 </div>
 </div>
@@ -1838,7 +1919,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-13 03:50:25 UTC
+Last updated 2022-01-13 04:44:16 UTC
 </div>
 </div>
 </body>

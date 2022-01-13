@@ -1,0 +1,20 @@
+= Stage 03: Проработка Domain Model
+
+На этом этапе прорабатываются *Domain Model*, т.е. фактически Java-classes, которые являются представлением реальных (бизнес) сущностей вашего проекта (domain). Выделяются основополагающие атрибуты для этих сущностей.
+
+== Tasks
+
+NOTE: Все нижеописанное, удобнее (на данном этапе) реализовывать в виде *UML Class Diagram*. В качестве online-инструмента может выступать, например: link:https://app.diagrams.net/[draw.io]
+
+* Выделить ключевые *Domain Models* в вашем проекте.
+* Выделить ключевые аттрибуты для каждой *Domain model*.
+* Определить типы связей между сущностями (One to One, One to Many, Many to Many)
+* Добавить *UML Class Diagram* в проект.
+
+WARNING: К проработке Domain Model необходимо будет возвращаться по мере развития проекта и добавления нового функционала.
+
+== Example
+
+Open with *draw.io* following diagram:
+
+link:https://github.com/JD2-86/interview-helper/blob/master/interview-helper.drawio[UML Class Diagram with draw.io]

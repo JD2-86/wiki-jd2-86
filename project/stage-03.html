@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Themes for the projects</title>
+<title>Stage 03: Проработка Domain Model</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,428 +438,70 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Themes for the projects</h1>
+<h1>Stage 03: Проработка Domain Model</h1>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>В качестве темы для проекта можно выбрать любую тему, но ЖЕЛАТЕЛЬНО выбрать тему, которая нравится или близка конкретно Вам. Так же в основе проекта можно заложить какую-то интересную идею.</p>
+<p>На этом этапе прорабатываются <strong>Domain Model</strong>, т.е. фактически Java-classes, которые являются представлением реальных (бизнес) сущностей вашего проекта (domain). Выделяются основополагающие атрибуты для этих сущностей.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tasks">Tasks</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Все нижеописанное, удобнее (на данном этапе) реализовывать в виде <strong>UML Class Diagram</strong>. В качестве online-инструмента может выступать, например: <a href="https://app.diagrams.net/">draw.io</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Выделить ключевые <strong>Domain Models</strong> в вашем проекте.</p>
+</li>
+<li>
+<p>Выделить ключевые аттрибуты для каждой <strong>Domain model</strong>.</p>
+</li>
+<li>
+<p>Определить типы связей между сущностями (One to One, One to Many, Many to Many)</p>
+</li>
+<li>
+<p>Добавить <strong>UML Class Diagram</strong> в проект.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+К проработке Domain Model необходимо будет возвращаться по мере развития проекта и добавления нового функционала.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example">Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Open with <strong>draw.io</strong> following diagram:</p>
 </div>
 <div class="paragraph">
-<p>Нижеперечисленные темы, действия в системе и модели являются лишь примерами и подлежат более детальному анализу и декомпозиции.</p>
+<p><a href="https://github.com/JD2-86/interview-helper/blob/master/interview-helper.drawio">UML Class Diagram with draw.io</a></p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_видеотека">Видеотека</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_модели">Модели.</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Фильм</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Название</p>
-</li>
-<li>
-<p>Актёры</p>
-</li>
-<li>
-<p>Режиссёр</p>
-</li>
-<li>
-<p>Дата выхода</p>
-</li>
-<li>
-<p>Страна, в которой выпущен фильм</p>
-</li>
-<li>
-<p>Жанр</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Актёр/режиссёр</p>
-<div class="ulist">
-<ul>
-<li>
-<p>ФИО</p>
-</li>
-<li>
-<p>Дата рождения</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Пользователь</p>
-<div class="ulist">
-<ul>
-<li>
-<p>ФИО</p>
-</li>
-<li>
-<p>Пароль</p>
-</li>
-<li>
-<p>Адрес почтового ящика</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Отзывы</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Фильм</p>
-</li>
-<li>
-<p>Пользователь</p>
-</li>
-<li>
-<p>Текст</p>
-</li>
-<li>
-<p>Оценка</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_действия_в_системе">Действия в системе</h3>
-<div class="sect3">
-<h4 id="_действия_по_добавлению">Действия по добавлению:</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Зарегистрировать пользователя в системе.</p>
-</li>
-<li>
-<p>Добавить актёра/режиссёра.</p>
-</li>
-<li>
-<p>Добавить фильм, выбрав съёмочную группу.</p>
-</li>
-<li>
-<p>Добавить отзыв пользователя о фильме.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_действия_по_просмотру">Действия по просмотру:</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Просмотреть список всех фильмов, вышедших на экраны в выбранном/введённом году.</p>
-</li>
-<li>
-<p>Просмотреть информацию об актёрах, снимавшихся в выбранном фильме.</p>
-</li>
-<li>
-<p>Просмотреть все отзывы о выбранном фильме.</p>
-</li>
-<li>
-<p>Просмотреть все фильмы, в которых снимался выбранный актёр.</p>
-</li>
-<li>
-<p>Просмотреть все отзывы выбранного пользователя.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_интернет_магазин">Интернет-магазин.</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_модели_2">Модели.</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Покупатель</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Имя</p>
-</li>
-<li>
-<p>Фамилия</p>
-</li>
-<li>
-<p>Почтовый ящик</p>
-</li>
-<li>
-<p>Пароль</p>
-</li>
-<li>
-<p>Телефон</p>
-</li>
-<li>
-<p>Адрес</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Заказ</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Номер</p>
-</li>
-<li>
-<p>Товары в заказе</p>
-</li>
-<li>
-<p>Дата оформления заказа</p>
-</li>
-<li>
-<p>Дата закрытия заказа</p>
-</li>
-<li>
-<p>Статус заказа</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Товар</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Название</p>
-</li>
-<li>
-<p>Описание</p>
-</li>
-<li>
-<p>Цена</p>
-</li>
-<li>
-<p>Оставшееся количество</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Для товаров в заказе хранить: название и количество.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_действия_в_системе_2">Действия в системе.</h3>
-<div class="sect3">
-<h4 id="_ограничения">Ограничения:</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Пользователь не сможет оформить заказ, если на складе недостаточно товаров выбранного типа</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_действия_по_добавлению_2">Действия по добавлению:</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Добавить в систему нового пользователя.</p>
-</li>
-<li>
-<p>Добавить в систему новый товар.</p>
-</li>
-<li>
-<p>Оформить заказ для выбранного пользователя: с добавлением товаров/выбором их количества.</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_действия_по_просмотру_2">Действия по просмотру:</h4>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Просмотреть список всех пользователей системы.</p>
-</li>
-<li>
-<p>Просмотреть список всех заказов выбранного пользователя.</p>
-</li>
-<li>
-<p>Просмотреть список всех товаров в системе.</p>
-</li>
-<li>
-<p>Просмотреть список всех заказов, в которые включен выбранный товар.</p>
-</li>
-<li>
-<p>Удалить заказы, сделанные раньше введённой даты.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_обучение">Обучение.</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Преподаватель</strong> объявляет запись на <strong>Курс</strong>.</p>
-</li>
-<li>
-<p><strong>Студент</strong> записывается на <strong>Курс</strong>, обучается и по окончании <strong>Преподаватель</strong> выставляет <strong>Оценку</strong>, которая сохраняется в <strong>Архиве</strong>.</p>
-</li>
-<li>
-<p><strong>Студентов</strong>, <strong>Преподавателей</strong> и <strong>Курсов</strong> при обучении может быть несколько.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_платежи">Платежи.</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Клиент</strong> имеет <strong>Счет</strong> в банке и <strong>Кредитную Карту</strong>.</p>
-</li>
-<li>
-<p><strong>Клиент</strong> может оплатить <strong>Заказ</strong>, сделать платеж на другой <strong>Счет</strong>, заблокировать <strong>Кредитную Карту</strong> и аннулировать <strong>Счет</strong>.</p>
-</li>
-<li>
-<p><strong>Администратор</strong> может заблокировать <strong>Кредитную Карту</strong> за превышение кредита.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_вступительные_экзамены">Вступительные экзамены.</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Абитуриент</strong> регистрируется на <strong>Факультет</strong>, сдает <strong>Экзамены</strong>.</p>
-</li>
-<li>
-<p><strong>Преподаватель</strong> выставляет <strong>Оценку</strong>.</p>
-</li>
-<li>
-<p><strong>Система</strong> подсчитывает средний балл и определяет <strong>Абитуриентов</strong>, зачисленных в учебное заведение.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_городской_транспорт">Городской транспорт.</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>На <strong>Маршрут</strong> назначаются <strong>Автобус</strong>, <strong>Троллейбус</strong> или <strong>Трамвай</strong>.</p>
-</li>
-<li>
-<p><strong>Транспортные средства</strong> должны двигаться с определенным для каждого <strong>Маршрута</strong> интервалом.</p>
-</li>
-<li>
-<p>При поломке на <strong>Маршрут</strong> должен выходить резервный транспорт или увеличиваться интервал движения.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_заказ_гостиницы">Заказ гостиницы.</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Клиент</strong> оставляет <strong>Заявку</strong> на <strong>Номер</strong>.</p>
-</li>
-<li>
-<p>Указав количество мест в номере, класса апартаментов и времени пребывания.</p>
-</li>
-<li>
-<p><strong>Администратор</strong> рассматривает <strong>Заявку</strong>, подтверждает или отклоняет.</p>
-</li>
-<li>
-<p><strong>Результат</strong> просматривает <strong>Клиент</strong>.</p>
-</li>
-<li>
-<p>В случае подтверждения <strong>Заявки</strong> <strong>Клиент</strong> оплачивает услуги.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_прокат_автомобилей">Прокат автомобилей.</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Клиент</strong> выбирает <strong>Автомобиль</strong> из списка доступных.</p>
-</li>
-<li>
-<p>Заполняет форму <strong>Заказа</strong>, указывая паспортные данные, срок аренды.</p>
-</li>
-<li>
-<p><strong>Администратор</strong> может отклонить <strong>Заявку</strong>, указав причины отказа.</p>
-</li>
-<li>
-<p>При подтверждении <strong>Заявки</strong>, <strong>Клиент</strong> оплачивает <strong>Заказ</strong>. <strong>Система</strong> выписывает сумму.</p>
-</li>
-<li>
-<p>В случае повреждения <strong>Автомобиля</strong> <strong>Клиентом</strong>, <strong>Администратор</strong> вносит соответствующие пометки.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_интернет_провайдер">Интернет-провайдер.</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_аукцион">Аукцион.</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_тотализатор">Тотализатор.</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_социологический_опросник">Социологический Опросник.</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_аудиовидеоигротека">Аудио/Видео/Игротека.</h2>
-<div class="sectionbody">
-
 </div>
 </div>
 </div>

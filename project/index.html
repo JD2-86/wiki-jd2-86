@@ -454,6 +454,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_example_2">Example</a></li>
 </ul>
 </li>
+<li><a href="#_stage_03_проработка_domain_model">Stage 03: Проработка Domain Model</a>
+<ul class="sectlevel2">
+<li><a href="#_tasks_3">Tasks</a></li>
+<li><a href="#_example_3">Example</a></li>
+<li><a href="#_versioning">Versioning</a></li>
+</ul>
+</li>
 <li><a href="#_themes_for_the_projects">Themes for the projects</a>
 <ul class="sectlevel2">
 <li><a href="#_видеотека">Видеотека</a></li>
@@ -633,6 +640,88 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h3 id="_example_2">Example</h3>
 <div class="paragraph">
 <p><a href="https://miro.com/app/board/uXjVOY8hA_k=/?invite_link_id=177006962450" target="_blank" rel="noopener">Mind Map</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_stage_03_проработка_domain_model">Stage 03: Проработка Domain Model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>На этом этапе прорабатываются <strong>Domain Model</strong>, т.е. фактически Java-classes, которые являются представлением реальных (бизнес) сущностей вашего проекта (domain). Выделяются основополагающие атрибуты для этих сущностей.</p>
+</div>
+<div class="sect2">
+<h3 id="_tasks_3">Tasks</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Все нижеописанное, удобнее (на данном этапе) реализовывать в виде <strong>UML Class Diagram</strong>. В качестве online-инструмента может выступать, например: <a href="https://app.diagrams.net/">draw.io</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Выделить ключевые <strong>Domain Models</strong> в вашем проекте.</p>
+</li>
+<li>
+<p>Выделить ключевые аттрибуты для каждой <strong>Domain model</strong>.</p>
+</li>
+<li>
+<p>Определить типы связей между сущностями (One to One, One to Many, Many to Many)</p>
+</li>
+<li>
+<p>Добавить <strong>UML Class Diagram</strong> в проект.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+К проработке Domain Model необходимо будет возвращаться по мере развития проекта и добавления нового функционала.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_example_3">Example</h3>
+<div class="paragraph">
+<p>Open with <strong>draw.io</strong> following diagram:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/JD2-86/interview-helper/blob/master/interview-helper.drawio">UML Class Diagram with draw.io</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_versioning">Versioning</h3>
+<div class="paragraph">
+<p>Для прозрачности понимания и использования следует придерживаться следующих принципов:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Каждая <strong>VERSION</strong> продукта эквивалентен одному <strong>EPIC</strong>.</p>
+</li>
+<li>
+<p>Каждый последующие <strong>EPIC</strong> увеличивают <strong>VERSION</strong> продукта итеративно, т.е. <code>+1</code> к версии.</p>
+</li>
+<li>
+<p><strong>UML Class Diagram</strong> должны составляться под каждую новую <strong>VERSION</strong> продукта, на базе предыдущей.</p>
+</li>
+<li>
+<p><strong>UML Class Diagrams</strong> для прошлых <strong>VERSIONS</strong> должны храниться в первоначальном состоянии, а не измененными в рамках другой <strong>VERSION</strong>.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1036,7 +1125,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-13 03:50:25 UTC
+Last updated 2022-01-13 04:44:16 UTC
 </div>
 </div>
 </body>
