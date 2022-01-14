@@ -12,6 +12,8 @@ include::stage-02.adoc[]
 
 include::stage-03.adoc[]
 
+include::versioning.adoc[]
+
 include::stage-04.adoc[]
 
 include::themes.adoc[]
