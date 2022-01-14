@@ -12,14 +12,9 @@ include::stage-02.adoc[]
 
 include::stage-03.adoc[]
 
-== Versioning
+include::versioning.adoc[]
 
-Для прозрачности понимания и использования следует придерживаться следующих принципов:
-
-* Каждая *VERSION* продукта эквивалентен одному *EPIC*.
-* Каждый последующие *EPIC* увеличивают *VERSION* продукта итеративно, т.е. `+1` к версии.
-* *UML Class Diagram* должны составляться под каждую новую *VERSION* продукта, на базе предыдущей.
-* *UML Class Diagrams* для прошлых *VERSIONS* должны храниться в первоначальном состоянии, а не измененными в рамках другой *VERSION*.
+include::stage-04.adoc[]
 
 include::themes.adoc[]
 

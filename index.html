@@ -472,7 +472,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_stage_01_инициализация_проекта">3.1. Stage 01: Инициализация проекта</a></li>
 <li><a href="#_stage_02_проработка_функционала_проекта">3.2. Stage 02: Проработка функционала проекта</a></li>
 <li><a href="#_stage_03_проработка_domain_model">3.3. Stage 03: Проработка Domain Model</a></li>
-<li><a href="#_themes_for_the_projects">3.4. Themes for the projects</a></li>
+<li><a href="#_versioning">3.4. Versioning</a></li>
+<li><a href="#_stage_04_инициализация_maven_проекта">3.5. Stage 04: Инициализация maven-проекта</a></li>
+<li><a href="#_themes_for_the_projects">3.6. Themes for the projects</a></li>
 </ul>
 </li>
 </ul>
@@ -1506,10 +1508,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://github.com/JD2-86/interview-helper/blob/master/interview-helper.drawio">UML Class Diagram with draw.io</a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_versioning">3.3.3. Versioning</h4>
+</div>
+<div class="sect2">
+<h3 id="_versioning">3.4. Versioning</h3>
 <div class="paragraph">
-<p>Для прозрачности понимания и использования следует придерживаться следующих принципов:</p>
+<p>Приложения редко разрабатываются с полным функционалом. Чаще всего выпускают различные версии приложения, в каждой из которых добавляют новый функционал и производят исправление багов предыдущей версии. Для прозрачности понимания и использования процесса <strong>versioning</strong>  следует придерживаться следующих принципов:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1528,9 +1531,58 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_stage_04_инициализация_maven_проекта">3.5. Stage 04: Инициализация maven-проекта</h3>
+<div class="paragraph">
+<p>На этом этапе создает Apache Maven проекта в рамках которого будет выполняться разработка. В процессе разработки может происходить:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Декомпозиция проекта на модули</p>
+</li>
+<li>
+<p>Декомпозиция проекта на независимые модули (сервисы)</p>
+</li>
+<li>
+<p>Изменение используемых libraries, tools, stack</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Для независимых сервисов, чаще всего, практикуют подход <strong>One repository per One service</strong>. В данном случае он не практикуется, так как это усложнит разработку.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_tasks_4">3.5.1. Tasks</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Инициализировать web-application с помощью Apache Maven.</p>
+</li>
+<li>
+<p>Создать общедоступную страницу с проектом, которая содержит приветствие для потенциальных клиентов.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_4">3.5.2. Example</h4>
+<div class="paragraph">
+<p><a href="https://github.com/JD2-86/interview-helper" target="_blank" rel="noopener">Interview Helper</a></p>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_themes_for_the_projects">3.4. Themes for the projects</h3>
+<h3 id="_themes_for_the_projects">3.6. Themes for the projects</h3>
 <div class="paragraph">
 <p>В качестве темы для проекта можно выбрать любую тему, но ЖЕЛАТЕЛЬНО выбрать тему, которая нравится или близка конкретно Вам. Так же в основе проекта можно заложить какую-то интересную идею.</p>
 </div>
@@ -1538,7 +1590,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Нижеперечисленные темы, действия в системе и модели являются лишь примерами и подлежат более детальному анализу и декомпозиции.</p>
 </div>
 <div class="sect3">
-<h4 id="_видеотека">3.4.1. Видеотека</h4>
+<h4 id="_видеотека">3.6.1. Видеотека</h4>
 <div class="sect4">
 <h5 id="_модели">Модели.</h5>
 <div class="olist arabic">
@@ -1665,7 +1717,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_интернет_магазин">3.4.2. Интернет-магазин.</h4>
+<h4 id="_интернет_магазин">3.6.2. Интернет-магазин.</h4>
 <div class="sect4">
 <h5 id="_модели_2">Модели.</h5>
 <div class="olist arabic">
@@ -1795,7 +1847,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_обучение">3.4.3. Обучение.</h4>
+<h4 id="_обучение">3.6.3. Обучение.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1811,7 +1863,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_платежи">3.4.4. Платежи.</h4>
+<h4 id="_платежи">3.6.4. Платежи.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1827,7 +1879,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_вступительные_экзамены">3.4.5. Вступительные экзамены.</h4>
+<h4 id="_вступительные_экзамены">3.6.5. Вступительные экзамены.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1843,7 +1895,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_городской_транспорт">3.4.6. Городской транспорт.</h4>
+<h4 id="_городской_транспорт">3.6.6. Городской транспорт.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1859,7 +1911,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_заказ_гостиницы">3.4.7. Заказ гостиницы.</h4>
+<h4 id="_заказ_гостиницы">3.6.7. Заказ гостиницы.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1881,7 +1933,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_прокат_автомобилей">3.4.8. Прокат автомобилей.</h4>
+<h4 id="_прокат_автомобилей">3.6.8. Прокат автомобилей.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1903,23 +1955,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_интернет_провайдер">3.4.9. Интернет-провайдер.</h4>
+<h4 id="_интернет_провайдер">3.6.9. Интернет-провайдер.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_аукцион">3.4.10. Аукцион.</h4>
+<h4 id="_аукцион">3.6.10. Аукцион.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_тотализатор">3.4.11. Тотализатор.</h4>
+<h4 id="_тотализатор">3.6.11. Тотализатор.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_социологический_опросник">3.4.12. Социологический Опросник.</h4>
+<h4 id="_социологический_опросник">3.6.12. Социологический Опросник.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_аудиовидеоигротека">3.4.13. Аудио/Видео/Игротека.</h4>
+<h4 id="_аудиовидеоигротека">3.6.13. Аудио/Видео/Игротека.</h4>
 
 </div>
 </div>
@@ -1928,7 +1980,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-13 15:03:33 UTC
+Last updated 2022-01-14 05:32:04 UTC
 </div>
 </div>
 </body>

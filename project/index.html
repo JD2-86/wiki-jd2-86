@@ -458,7 +458,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_tasks_3">Tasks</a></li>
 <li><a href="#_example_3">Example</a></li>
+</ul>
+</li>
 <li><a href="#_versioning">Versioning</a></li>
+<li><a href="#_stage_04_инициализация_maven_проекта">Stage 04: Инициализация maven-проекта</a>
+<ul class="sectlevel2">
+<li><a href="#_tasks_4">Tasks</a></li>
+<li><a href="#_example_4">Example</a></li>
 </ul>
 </li>
 <li><a href="#_themes_for_the_projects">Themes for the projects</a>
@@ -702,10 +708,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://github.com/JD2-86/interview-helper/blob/master/interview-helper.drawio">UML Class Diagram with draw.io</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_versioning">Versioning</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_versioning">Versioning</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Для прозрачности понимания и использования следует придерживаться следующих принципов:</p>
+<p>Приложения редко разрабатываются с полным функционалом. Чаще всего выпускают различные версии приложения, в каждой из которых добавляют новый функционал и производят исправление багов предыдущей версии. Для прозрачности понимания и использования процесса <strong>versioning</strong>  следует придерживаться следующих принципов:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -722,6 +731,57 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>UML Class Diagrams</strong> для прошлых <strong>VERSIONS</strong> должны храниться в первоначальном состоянии, а не измененными в рамках другой <strong>VERSION</strong>.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_stage_04_инициализация_maven_проекта">Stage 04: Инициализация maven-проекта</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>На этом этапе создает Apache Maven проекта в рамках которого будет выполняться разработка. В процессе разработки может происходить:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Декомпозиция проекта на модули</p>
+</li>
+<li>
+<p>Декомпозиция проекта на независимые модули (сервисы)</p>
+</li>
+<li>
+<p>Изменение используемых libraries, tools, stack</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Для независимых сервисов, чаще всего, практикуют подход <strong>One repository per One service</strong>. В данном случае он не практикуется, так как это усложнит разработку.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_tasks_4">Tasks</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Инициализировать web-application с помощью Apache Maven.</p>
+</li>
+<li>
+<p>Создать общедоступную страницу с проектом, которая содержит приветствие для потенциальных клиентов.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_example_4">Example</h3>
+<div class="paragraph">
+<p><a href="https://github.com/JD2-86/interview-helper" target="_blank" rel="noopener">Interview Helper</a></p>
 </div>
 </div>
 </div>
@@ -1125,7 +1185,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-13 15:03:33 UTC
+Last updated 2022-01-14 05:32:04 UTC
 </div>
 </div>
 </body>
