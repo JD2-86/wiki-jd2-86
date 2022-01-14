@@ -15,5 +15,5 @@ NOTE: Для независимых сервисов, чаще всего, пр�
 
 == Example
 
-link:http://ec2-3-71-2-193.eu-central-1.compute.amazonaws.com:8080/ih/[Interview Helper as web-application^]
-link:https://github.com/JD2-86/interview-helper[Interview Helper as project^]
+* link:http://ec2-3-71-2-193.eu-central-1.compute.amazonaws.com:8080/ih/[Interview Helper as web-application^]
+* link:https://github.com/JD2-86/interview-helper[Interview Helper as project^]
