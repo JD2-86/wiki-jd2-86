@@ -467,6 +467,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_example_4">Example</a></li>
 </ul>
 </li>
+<li><a href="#_stage_05_разработка_data_access_layer">Stage 05: Разработка Data Access Layer</a>
+<ul class="sectlevel2">
+<li><a href="#_tasks_5">Tasks</a></li>
+<li><a href="#_example_5">Example</a></li>
+</ul>
+</li>
 <li><a href="#_themes_for_the_projects">Themes for the projects</a>
 <ul class="sectlevel2">
 <li><a href="#_видеотека">Видеотека</a></li>
@@ -797,6 +803,80 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li>
 <p><a href="http://ec2-3-71-2-193.eu-central-1.compute.amazonaws.com:8080/ih/" target="_blank" rel="noopener">Interview Helper as web-application</a></p>
 </li>
+<li>
+<p><a href="https://github.com/JD2-86/interview-helper" target="_blank" rel="noopener">Interview Helper as project</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_stage_05_разработка_data_access_layer">Stage 05: Разработка Data Access Layer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>На этом этапе создает <strong>Data Access Layer</strong> (<strong>слой доступа к данным</strong>) для приложения, который будет обеспечивать приложение данными.</p>
+</div>
+<div class="sect2">
+<h3 id="_tasks_5">Tasks</h3>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+В процессе реализации допускается изменение <strong>Domain models</strong>, хотя это говорит о ее недостаточной проработке на более ранних этапах.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Реализовать <strong>Domain models</strong> как Java classes.</p>
+</li>
+<li>
+<p>На базе <strong>User Stories</strong> необходимо выделить <strong>Domain models</strong> над которыми будут производиться какие-либо операции и сами операции.</p>
+</li>
+<li>
+<p>Создать <strong>DAO</strong> interface для каждой <strong>Domain Models</strong> выделенной на предыдущем этапе.</p>
+</li>
+<li>
+<p>Создать и описать методы в <strong>DAO</strong> interfaces.</p>
+</li>
+<li>
+<p>Реализовать <strong>DAO</strong> interfaces. Для этого можно использовать тот способ, который доступен на данный момент. Например:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Java Collection Framework</strong> для хранения в оперативной памяти</p>
+</li>
+<li>
+<p><strong>Files and IO Streams</strong> для хранения в файловой системе</p>
+</li>
+<li>
+<p><strong>JDBC</strong> для хранения в БД</p>
+</li>
+<li>
+<p>Прочие библиотеки или фреймворки</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Мигрировать в хранилище данные (необходимо для демонстрации работы)</p>
+</li>
+<li>
+<p>Протестировать работу <strong>DAO</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_example_5">Example</h3>
+<div class="ulist">
+<ul>
 <li>
 <p><a href="https://github.com/JD2-86/interview-helper" target="_blank" rel="noopener">Interview Helper as project</a></p>
 </li>
@@ -1204,7 +1284,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-17 04:52:59 UTC
+Last updated 2022-01-17 04:55:26 UTC
 </div>
 </div>
 </body>

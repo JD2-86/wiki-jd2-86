@@ -475,7 +475,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_stage_03_проработка_domain_model">3.3. Stage 03: Проработка Domain Model</a></li>
 <li><a href="#_versioning">3.4. Versioning</a></li>
 <li><a href="#_stage_04_инициализация_maven_проекта">3.5. Stage 04: Инициализация maven-проекта</a></li>
-<li><a href="#_themes_for_the_projects">3.6. Themes for the projects</a></li>
+<li><a href="#_stage_05_разработка_data_access_layer">3.6. Stage 05: Разработка Data Access Layer</a></li>
+<li><a href="#_themes_for_the_projects">3.7. Themes for the projects</a></li>
 </ul>
 </li>
 </ul>
@@ -1625,7 +1626,79 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_themes_for_the_projects">3.6. Themes for the projects</h3>
+<h3 id="_stage_05_разработка_data_access_layer">3.6. Stage 05: Разработка Data Access Layer</h3>
+<div class="paragraph">
+<p>На этом этапе создает <strong>Data Access Layer</strong> (<strong>слой доступа к данным</strong>) для приложения, который будет обеспечивать приложение данными.</p>
+</div>
+<div class="sect3">
+<h4 id="_tasks_5">3.6.1. Tasks</h4>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+В процессе реализации допускается изменение <strong>Domain models</strong>, хотя это говорит о ее недостаточной проработке на более ранних этапах.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Реализовать <strong>Domain models</strong> как Java classes.</p>
+</li>
+<li>
+<p>На базе <strong>User Stories</strong> необходимо выделить <strong>Domain models</strong> над которыми будут производиться какие-либо операции и сами операции.</p>
+</li>
+<li>
+<p>Создать <strong>DAO</strong> interface для каждой <strong>Domain Models</strong> выделенной на предыдущем этапе.</p>
+</li>
+<li>
+<p>Создать и описать методы в <strong>DAO</strong> interfaces.</p>
+</li>
+<li>
+<p>Реализовать <strong>DAO</strong> interfaces. Для этого можно использовать тот способ, который доступен на данный момент. Например:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Java Collection Framework</strong> для хранения в оперативной памяти</p>
+</li>
+<li>
+<p><strong>Files and IO Streams</strong> для хранения в файловой системе</p>
+</li>
+<li>
+<p><strong>JDBC</strong> для хранения в БД</p>
+</li>
+<li>
+<p>Прочие библиотеки или фреймворки</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Мигрировать в хранилище данные (необходимо для демонстрации работы)</p>
+</li>
+<li>
+<p>Протестировать работу <strong>DAO</strong>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_5">3.6.2. Example</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/JD2-86/interview-helper" target="_blank" rel="noopener">Interview Helper as project</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_themes_for_the_projects">3.7. Themes for the projects</h3>
 <div class="paragraph">
 <p>В качестве темы для проекта можно выбрать любую тему, но ЖЕЛАТЕЛЬНО выбрать тему, которая нравится или близка конкретно Вам. Так же в основе проекта можно заложить какую-то интересную идею.</p>
 </div>
@@ -1633,7 +1706,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Нижеперечисленные темы, действия в системе и модели являются лишь примерами и подлежат более детальному анализу и декомпозиции.</p>
 </div>
 <div class="sect3">
-<h4 id="_видеотека">3.6.1. Видеотека</h4>
+<h4 id="_видеотека">3.7.1. Видеотека</h4>
 <div class="sect4">
 <h5 id="_модели">Модели.</h5>
 <div class="olist arabic">
@@ -1760,7 +1833,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_интернет_магазин">3.6.2. Интернет-магазин.</h4>
+<h4 id="_интернет_магазин">3.7.2. Интернет-магазин.</h4>
 <div class="sect4">
 <h5 id="_модели_2">Модели.</h5>
 <div class="olist arabic">
@@ -1890,7 +1963,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_обучение">3.6.3. Обучение.</h4>
+<h4 id="_обучение">3.7.3. Обучение.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1906,7 +1979,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_платежи">3.6.4. Платежи.</h4>
+<h4 id="_платежи">3.7.4. Платежи.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1922,7 +1995,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_вступительные_экзамены">3.6.5. Вступительные экзамены.</h4>
+<h4 id="_вступительные_экзамены">3.7.5. Вступительные экзамены.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1938,7 +2011,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_городской_транспорт">3.6.6. Городской транспорт.</h4>
+<h4 id="_городской_транспорт">3.7.6. Городской транспорт.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1954,7 +2027,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_заказ_гостиницы">3.6.7. Заказ гостиницы.</h4>
+<h4 id="_заказ_гостиницы">3.7.7. Заказ гостиницы.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1976,7 +2049,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_прокат_автомобилей">3.6.8. Прокат автомобилей.</h4>
+<h4 id="_прокат_автомобилей">3.7.8. Прокат автомобилей.</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1998,23 +2071,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_интернет_провайдер">3.6.9. Интернет-провайдер.</h4>
+<h4 id="_интернет_провайдер">3.7.9. Интернет-провайдер.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_аукцион">3.6.10. Аукцион.</h4>
+<h4 id="_аукцион">3.7.10. Аукцион.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_тотализатор">3.6.11. Тотализатор.</h4>
+<h4 id="_тотализатор">3.7.11. Тотализатор.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_социологический_опросник">3.6.12. Социологический Опросник.</h4>
+<h4 id="_социологический_опросник">3.7.12. Социологический Опросник.</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_аудиовидеоигротека">3.6.13. Аудио/Видео/Игротека.</h4>
+<h4 id="_аудиовидеоигротека">3.7.13. Аудио/Видео/Игротека.</h4>
 
 </div>
 </div>
@@ -2023,7 +2096,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-17 04:52:59 UTC
+Last updated 2022-01-17 04:55:26 UTC
 </div>
 </div>
 </body>
