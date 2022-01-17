@@ -1,0 +1,9 @@
+= Lesson 14: Basic Mapping
+
+== Practice
+
+* Выполнить link:https://github.com/rakovets/course-java-data-persistence/blob/master/06-mapping-basic/src/main/resources/mapping-basic.adoc[Basic Mapping]
+
+== Homework
+
+* Изучить теоретический материал.
