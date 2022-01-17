@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Lesson 12: Intro to JPA</title>
+<title>Stage 05: Разработка Data Access Layer</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,28 +438,81 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Lesson 12: Intro to JPA</h1>
+<h1>Stage 05: Разработка Data Access Layer</h1>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_practice">Practice</h2>
+<div id="preamble">
 <div class="sectionbody">
+<div class="paragraph">
+<p>На этом этапе создает <strong>Data Access Layer</strong> (<strong>слой доступа к данным</strong>) для приложения, который будет обеспечивать приложение данными.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tasks">Tasks</h2>
+<div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+В процессе реализации допускается изменение <strong>Domain models</strong>, хотя это говорит о ее недостаточной проработке на более ранних этапах.
+</td>
+</tr>
+</table>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Выполнить <a href="https://github.com/rakovets/course-java-data-persistence/blob/master/04-intro-jpa/src/main/resources/intro-jpa.adoc">Intro to JPA</a></p>
+<p>Реализовать <strong>Domain models</strong> как Java classes.</p>
+</li>
+<li>
+<p>На базе <strong>User Stories</strong> необходимо выделить <strong>Domain models</strong> над которыми будут производиться какие-либо операции и сами операции.</p>
+</li>
+<li>
+<p>Создать <strong>DAO</strong> interface для каждой <strong>Domain Models</strong> выделенной на предыдущем этапе.</p>
+</li>
+<li>
+<p>Создать и описать методы в <strong>DAO</strong> interfaces.</p>
+</li>
+<li>
+<p>Реализовать <strong>DAO</strong> interfaces. Для этого можно использовать тот способ, который доступен на данный момент. Например:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Java Collection Framework</strong> для хранения в оперативной памяти</p>
+</li>
+<li>
+<p><strong>Files and IO Streams</strong> для хранения в файловой системе</p>
+</li>
+<li>
+<p><strong>JDBC</strong> для хранения в БД</p>
+</li>
+<li>
+<p>Прочие библиотеки или фреймворки</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Мигрировать в хранилище данные (необходимо для демонстрации работы)</p>
+</li>
+<li>
+<p>Протестировать работу <strong>DAO</strong>.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_homework">Homework</h2>
+<h2 id="_example">Example</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Изучить теоретический материал.</p>
+<p><a href="https://github.com/JD2-86/interview-helper" target="_blank" rel="noopener">Interview Helper as project</a></p>
 </li>
 </ul>
 </div>
