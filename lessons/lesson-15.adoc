@@ -2,7 +2,7 @@
 
 == Practice
 
-* Выполнить link:https://github.com/rakovets/course-java-data-persistence/blob/master/07-mapping-hierarchy/src/main/resources/mapping-hierarchy.adoc[Mapping Hierarchy]
+* Выполнить link:https://github.com/rakovets/course-java-data-persistence/blob/master/07-mapping-inheritance/src/main/resources/mapping-inheritance.adoc[Mapping Inheritance]
 
 == Homework
 
