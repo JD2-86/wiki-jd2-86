@@ -20,7 +20,7 @@
 |Василевич Виталий Валерьевич|https://proselyte.net/tutorials/hibernate-tutorial/configure/, https://proselyte.net/tutorials/hibernate-tutorial/sessions/ |No
 |Жигалко Евгений Владимирович|https://javarush.ru/groups/posts/2112-kratkiy-ehkskurs-v-vnedrenie-zavisimostey-ili-chto-ejshje-za-cdi |Yes
 |Кармызов Сергей Николаевич|https://proselyte.net/tutorials/hibernate-tutorial/persistent-classes/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-files/ |Yes
-|Карпович Владислав Андреевич|https://proselyte.net/tutorials/hibernate-tutorial/simple-application/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/ |Need to fix
+|Карпович Владислав Андреевич|https://proselyte.net/tutorials/hibernate-tutorial/simple-application/, https://proselyte.net/tutorials/hibernate-tutorial/mapping-types/ |Yes
 |Климахович Владислав Игоревич|https://proselyte.net/tutorials/hibernate-tutorial/annotations/, https://proselyte.net/tutorials/hibernate-tutorial/hibernate-query-language/ |Need to fix
 |Коваленко Алексей Петрович|https://proselyte.net/tutorials/hibernate-tutorial/criteria-queries/, https://proselyte.net/tutorials/hibernate-tutorial/native-sql/ |Yes
 |Колбасов Илья Николаевич|https://proselyte.net/tutorials/hibernate-tutorial/caching/, https://proselyte.net/tutorials/hibernate-tutorial/batch-processing/ |Need to fix
