@@ -46,6 +46,7 @@
 * link:https://youtu.be/6ZjaO8hGiQA[Lesson 12: Java Persistence API (JPA)^]
 * link:https://youtu.be/ToLGj3iEPcw[Lesson 13: Intro to Hibernate^]
 * link:https://youtu.be/at9aFK2fgGE[Lesson 14: Hibernate. Basic Mapping^]
+* link:https://youtu.be/RNeUZKSU5l8[Lesson 15: Hibernate. Mapping Hierarchy^]
 
 == Topics
 
