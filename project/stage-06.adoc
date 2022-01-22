@@ -1,0 +1,14 @@
+= Stage 06: Разработка Presentation Layer
+
+На этом этапе создает *Presentation Layer* (*слой представления*) для приложения, который будет каким-то образом отображать данные для клиента.
+
+== Tasks
+
+* Реализовать *navbar* общий для всех страниц, для удобной навигации в web-приложении.
+* Реализовать все необходимые страницы в рамках текущей версии проекта.
+* Улучшить внешний вид web-приложения за счет использования toolkit *Bootstrap*.
+
+== Example
+
+* link:http://ec2-3-71-2-193.eu-central-1.compute.amazonaws.com:8080/ih/[Interview Helper as web-application^]
+* link:https://github.com/JD2-86/interview-helper[Interview Helper as project^]
