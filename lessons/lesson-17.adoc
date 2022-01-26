@@ -1,0 +1,9 @@
+= Lesson 17: Query with JPQL
+
+== Practice
+
+* Выполнить link:https://github.com/rakovets/course-java-data-persistence/blob/master/09-query-jpql/src/main/resources/query-jpql.adoc[Query with JPQL]
+
+== Homework
+
+* Изучить теоретический материал.
