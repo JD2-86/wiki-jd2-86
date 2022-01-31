@@ -39,4 +39,6 @@ include::lesson-16.adoc[]
 
 include::lesson-17.adoc[]
 
+include::lesson-18.adoc[]
+
 :leveloffset: -1
