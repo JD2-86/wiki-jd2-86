@@ -1,0 +1,9 @@
+= Lesson 18: Query with Criteria API
+
+== Practice
+
+* Выполнить link:https://github.com/rakovets/course-java-data-persistence/blob/master/10-query-criteria/src/main/resources/rbac-db-schema.png[Query with Criteria API]
+
+== Homework
+
+* Изучить теоретический материал.
