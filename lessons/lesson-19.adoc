@@ -1,0 +1,9 @@
+= Lesson 19: Transaction process. Transactions. Cache
+
+== Practice
+
+* Добавить второй уровень кэша для Hibernate.
+
+== Homework
+
+* Изучить теоретический материал.
