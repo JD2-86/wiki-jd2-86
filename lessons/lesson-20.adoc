@@ -1,0 +1,11 @@
+= Lesson 20: Apache Maven. Multi-module. Profiles
+
+== Practice
+
+* Выполнить задание:
+** link:https://github.com/rakovets/course-java-tools/blob/master/apache-maven/multi-modules/src/main/resources/practice/apache-maven-multi-modules.adoc[Apache Maven: Multi-modules project.].
+** link:https://github.com/rakovets/course-java-tools/blob/master/apache-maven/profiles/src/main/resources/practice/apache-maven-profiles.adoc[Apache Maven: Profiles.].
+
+== Homework
+
+* Изучить теоретический материал.
