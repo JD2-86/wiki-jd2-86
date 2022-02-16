@@ -1,0 +1,11 @@
+= Lesson 21: Spring Framework. Bean
+
+== Practice
+
+* Выполнить задание:
+** link:https://github.com/rakovets/course-java-spring/blob/master/spring-framework/bean/src/main/resources/spring-framework-bean.adoc[Spring Framework. Bean^].
+
+
+== Homework
+
+* Изучить теоретический материал.
