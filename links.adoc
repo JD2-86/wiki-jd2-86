@@ -49,6 +49,8 @@
 * link:https://youtu.be/RNeUZKSU5l8[Lesson 15: Hibernate. Mapping Hierarchy^]
 * link:https://youtu.be/d0C9N870w5o[Lesson 18: Hibernate. Criteria API^]
 * link:https://youtu.be/ZM26gQxVtU0[Lesson 19: Hibernate. Transactions. Cache^]
+* link:https://youtu.be/bseMhF9q2fs[Lesson 20: Apache Maven. Multi-module. Profiles^]
+* link:https://youtu.be/NeZKHP3P0cE[Lesson 21: Spring Framework. Bean^]
 
 == Topics
 
