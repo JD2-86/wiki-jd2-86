@@ -51,6 +51,8 @@
 * link:https://youtu.be/ZM26gQxVtU0[Lesson 19: Hibernate. Transactions. Cache^]
 * link:https://youtu.be/bseMhF9q2fs[Lesson 20: Apache Maven. Multi-module. Profiles^]
 * link:https://youtu.be/NeZKHP3P0cE[Lesson 21: Spring Framework. Bean^]
+* link:https://youtu.be/9gYTjb6ahCI[Lesson 22: Spring Framework. Bean lifecycle^]
+* link:https://youtu.be/NeZKHP3P0cE[Lesson 23: Spring Framework. ORM^]
 
 == Topics
 
