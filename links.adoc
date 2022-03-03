@@ -53,6 +53,8 @@
 * link:https://youtu.be/NeZKHP3P0cE[Lesson 21: Spring Framework. Bean^]
 * link:https://youtu.be/9gYTjb6ahCI[Lesson 22: Spring Framework. Bean lifecycle^]
 * link:https://youtu.be/NeZKHP3P0cE[Lesson 23: Spring Framework. ORM^]
+* link:https://youtu.be/OMfUDSkanvA[Lesson 24: Spring Framework: WebMVC^]
+* link:https://youtu.be/vs8SARbfR-s[Lesson 25: Spring Framework: REST-service^]
 
 == Topics
 
