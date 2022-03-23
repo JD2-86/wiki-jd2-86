@@ -1,0 +1,13 @@
+= Lesson 28: Spring Framework. Bean
+
+== Practice
+
+* Выполнить задание:
+** Запустить REST Web-service
+** Создать проект с RestTemplate, который забирает данные с этого сервиса.
+** В том же проекте только с WebClient, который забирает данные с этого сервиса.
+** Переделать проект как Web application. (Client -> Controller -> Service -> RestTemplate -> Service -> Controller -> View (JSP + Model))
+
+== Homework
+
+* Изучить теоретический материал.
