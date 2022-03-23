@@ -55,6 +55,10 @@
 * link:https://youtu.be/bToPnAU-fmE[Lesson 23: Spring Framework. ORM^]
 * link:https://youtu.be/OMfUDSkanvA[Lesson 24: Spring Framework: WebMVC^]
 * link:https://youtu.be/vs8SARbfR-s[Lesson 25: Spring Framework: REST-service^]
+* link:https://youtu.be/887IH9BXu_4[Lesson 26: Spring Data^]
+* link:https://youtu.be/Fhlp95KXUCs[Lesson 27: Spring REST Client^]
+* link:[Lesson 28: Spring Security^]
+* link:[Lesson 29: Spring Boot^]
 
 == Topics
 
