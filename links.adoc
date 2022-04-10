@@ -60,10 +60,10 @@
 * link:https://youtu.be/ezUL_xtZf58[Lesson 28: Spring Security^]
 * link:https://youtu.be/g2_b3kXMj78[Lesson 29: Data Persistence. DB migration^]
 * link:https://youtu.be/pCJ95QtHtyM[Lesson 30: Spring Boot^]
-* link:[Lesson 31: Tools. Mapping^]
-* link:[Lesson 32: Spring Testing^]
-* link:[Lesson 33: Tools. Logging^]
-* link:[Lesson 34: Spring Framework. AOP^]
+* link:https://youtu.be/rkV-zHOk63g[Lesson 31: Tools. Mapping^]
+* link:https://youtu.be/9eb7pkxxMTI[Lesson 32: Tools. Logging^]
+* link:https://youtu.be/p5EgdAMGP_U[Lesson 33: Spring Framework. AOP^]
+* link:[Lesson 34: Spring Testing^]
 * link:[Lesson 35: Demo. Roadmap^]
 
 == Topics
