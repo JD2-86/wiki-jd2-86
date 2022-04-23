@@ -63,8 +63,8 @@
 * link:https://youtu.be/rkV-zHOk63g[Lesson 31: Tools. Mapping^]
 * link:https://youtu.be/9eb7pkxxMTI[Lesson 32: Tools. Logging^]
 * link:https://youtu.be/p5EgdAMGP_U[Lesson 33: Spring Framework. AOP^]
-* link:[Lesson 34: Spring Testing^]
-* link:[Lesson 35: Demo. Roadmap^]
+* link:https://youtu.be/WI0mAhYueFI[Lesson 34: Testing. Spring Testing. Validation^]
+* link:https://youtu.be/aiLW3rg1RF8[Lesson 35: Demo. Roadmap. Q&A^]
 
 == Topics
 
